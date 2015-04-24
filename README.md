@@ -132,11 +132,11 @@ To retrieve details of the *Video Provider User*, you request his **LSUser** obj
 
 Delegate method **lsContentManagerDidGetUser:user:error** is called when the *Video Provider User* has successfully been fetched. After this, the *Video Provider User*'s videos can be loaded by calling **getUserVideoItems:**.  Upon succesful loading, delegate method  **lsContentManagerDidGetUserVideoItems:videoItems:error:** provides on array containing the *Video Provider User*'s all video items.
 
-![Alt text](https://github.com/FinweLtd/LittlstarSDK_iOS/blob/master/images/seq1.png "Sequence diagram: getProviderLSVideoItems")
+![Alt text](https://github.com/littlstar/LittlstarSDK_iOS/blob/master/images/seq1.png "Sequence diagram: getProviderLSVideoItems")
 
 To request single *Video Item* from the back-end, use **getVideoItemByVideoId:** method. Callback method **lsContentManagerDidGetVideoById:videoItem:error:** tells the delegate when the requested *Video Item* has been found.
 
-![Alt text](https://github.com/FinweLtd/LittlstarSDK_iOS/blob/master/images/seq2.png "Sequence diagram: getProviderLSVideoItems")
+![Alt text](https://github.com/littlstar/LittlstarSDK_iOS/blob/master/images/seq2.png "Sequence diagram: getProviderLSVideoItems")
 
 After one or more *Video Item*s has been received from the back-end,  you can select an **LSVideo** item to be played with the 360° player component (**Orion1View**), or show the details and retrieve thumbnail images of multiple **LSVideo** items in a user interface where the *Logged-in User* can select a video to be played.
 
@@ -161,7 +161,7 @@ NSURL *licenseURL = [NSURL fileURLWithPath:path];
 
 **Orion1view** delegate method **orion1ViewReadyToPlayVideo:** is called when the requested *Video Item* is ready to be played. Note that video starts playing only after **play:** method has been called (e.g. **[orionView play:0.0]** starts playing the requested video from the beginning). **Orion1View** also provides methods **pause**, **play**,  **seekTo:** and **isPaused**. Note that **Orion1View** inherits **UIView** and therefore inherits also properties and methods provided by UIView (e.g. setting the frame).
 
-![Alt text](https://github.com/FinweLtd/LittlstarSDK_iOS/blob/master/images/seq3.png "Sequence diagram: Orion1View")
+![Alt text](https://github.com/littlstar/LittlstarSDK_iOS/blob/master/images/seq3.png "Sequence diagram: Orion1View")
 
 Next Steps
 -------------
