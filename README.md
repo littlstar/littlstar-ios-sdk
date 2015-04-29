@@ -17,7 +17,7 @@ The Littlstar SDK is a developer library to easily build and implement mobile ap
 What's new
 -------
 
-Build 1.0.0, Apr 24, 2015:
+Build 1.1.0, Apr 29, 2015:
 * Initial Commit
 
 Overview
@@ -31,8 +31,9 @@ To summarize, the Littlstar SDK contains the following main components and purpo
 
 1. **LSUser** is a data class that represents a single user who has signed up to the back-end.
 2. **LSVideoItem** is a data class that represents a single video that is hosted on the back-end.
-3. **LSContentManager** for accessing hosted 360° video content by making requests to the back-end.
-4. **Orion1View** to view and play 360 degree video content.
+3. **LSCategory** is a data class that represents a single video category of which videos can be requested in a separate call.
+4. **LSContentManager** for accessing hosted 360° video content by making requests to the back-end.
+5. **Orion1View** to view and play 360 degree video content.
 
 These are covered in detail in the included API documentation. To get you started with ease, basic usage examples will be given in the following chapters with code snippets.
 
@@ -108,6 +109,10 @@ A **LSUser** class describes details of a video user (a registered video service
 
 A **LSVideoItem** object describes details of the 360 degree video data. It contains an unique video ID (**videoId**), which can be used to fetch or refresh the video data, video description (**desc**), title (**title**), URL to thumbnail image (**thumbURL**), number of all given stars (**stars**) and number of all given down-votes (**downvotes**). It also provides information whether a certain user has given a star (**stared**) or down-voted (**downvoted**) the video. Note that **stared** and **downvoted** properties are valid only when the user has been logged in. To use **LSVideoItem** class, import header *LSVideoItem.h*.
 
+###LSCategory
+
+A **LSCategory** object describes the basic information of a Littlstar video category; it contains an unique category ID (**categoryId**), an unique category name (**categoryName**), a category title name (**categoryDisplayName**) and finally a video count per category (**categoryVideoCount**).
+
 ###LSContentManager
 
 **LSContentManager** handles all communication with the Littlstar back-end service. ou use it for example for retrieving a list of available video items, logging in, and starring a great video. To use **LSContentManager** you need to import header *LSContentManager.h* into your project. Note that the license is needed to enable the Littlstar 360 video features (for more information check the chapter "License" above).
@@ -132,13 +137,17 @@ To retrieve details of the *Video Provider User*, you request his **LSUser** obj
 
 Delegate method **lsContentManagerDidGetUser:user:error** is called when the *Video Provider User* has successfully been fetched. After this, the *Video Provider User*'s videos can be loaded by calling **getUserVideoItems:**.  Upon succesful loading, delegate method  **lsContentManagerDidGetUserVideoItems:videoItems:error:** provides on array containing the *Video Provider User*'s all video items.
 
-![Alt text](https://github.com/littlstar/LittlstarSDK_iOS/blob/master/images/seq1.png "Sequence diagram: getProviderLSVideoItems")
+![Alt text](images/seq1.png "Sequence diagram: getUserVideoItems")
 
 To request single *Video Item* from the back-end, use **getVideoItemByVideoId:** method. Callback method **lsContentManagerDidGetVideoById:videoItem:error:** tells the delegate when the requested *Video Item* has been found.
 
-![Alt text](https://github.com/littlstar/LittlstarSDK_iOS/blob/master/images/seq2.png "Sequence diagram: getProviderLSVideoItems")
+![Alt text](images/seq2.png "Sequence diagram: getVideoItemByVideoId")
 
 After one or more *Video Item*s has been received from the back-end,  you can select an **LSVideo** item to be played with the 360° player component (**Orion1View**), or show the details and retrieve thumbnail images of multiple **LSVideo** items in a user interface where the *Logged-in User* can select a video to be played.
+
+To request videos by category (i.e. sports, music, travel, design etc.), method **getVideosByCategory:** can be used. Note that gategory needs to be given as **LSCategory** object. Method **getCategories** can be used to get available categories.
+
+![Alt text](images/seq4.png "Sequence diagram: getVideosByCategory")
 
 It's also possible to give a star (**starLSVideoItem:lsVideoItem**) and a downvote (**downvoteLSVideoItem:lsVideoItem**) to a *Video Item*. Note that giving stars or downvoting videos requires that user must be logged in (*Logged-in User*). **LSContentManager** provides also methods to log in to an existing user account (**loginUser:password:**) as well as register a new user (**registerUser:email:password:confirmation:**).
 
@@ -161,7 +170,7 @@ NSURL *licenseURL = [NSURL fileURLWithPath:path];
 
 **Orion1view** delegate method **orion1ViewReadyToPlayVideo:** is called when the requested *Video Item* is ready to be played. Note that video starts playing only after **play:** method has been called (e.g. **[orionView play:0.0]** starts playing the requested video from the beginning). **Orion1View** also provides methods **pause**, **play**,  **seekTo:** and **isPaused**. Note that **Orion1View** inherits **UIView** and therefore inherits also properties and methods provided by UIView (e.g. setting the frame).
 
-![Alt text](https://github.com/littlstar/LittlstarSDK_iOS/blob/master/images/seq3.png "Sequence diagram: Orion1View")
+![Alt text](images/seq3.png "Sequence diagram: Orion1View")
 
 Next Steps
 -------------

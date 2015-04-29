@@ -57,6 +57,9 @@
  *  @param videoItem       The video item of the selected video, defined in LSVideoItem.h.
  *  @param contentManager  Reference to LSContentManager
  *  @param licenseFileUrl  Url to license file
+ *
+ *  @see LSContentManager.h
+ *  @see LSVideoItem.h
  */
 -(void)initVideoWithVideoItem:(LSVideoItem*)videoItem contentManager:(LSContentManager*)contentManager licenseFileUrl:(NSURL *)licenseFileUrl;
 

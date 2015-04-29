@@ -11,6 +11,17 @@
 
 
 /**
+ * States for downloading videos
+ */
+enum {
+    LSVideoNotDownloaded = 0,
+    LSVideoDownloading,
+    LSVideoDownloaded
+};
+typedef NSUInteger LSVideoDownloadState;
+
+
+/**
  *  Class LSVideoItem, describes details of the video, fetched from Littlstar video service.
  */
 @interface LSVideoItem : NSObject
@@ -76,5 +87,10 @@
  * User downvote value, valid only when logged in.
  */
 @property (nonatomic, readonly) BOOL downvoted;
+
+/**
+ * Download state of a video defined in VideoItem.
+ */
+@property (nonatomic, readonly) LSVideoDownloadState downloadState;
 
 @end

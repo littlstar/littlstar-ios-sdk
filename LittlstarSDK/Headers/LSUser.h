@@ -33,4 +33,9 @@
  */
 @property (nonatomic, readonly) NSString *lsUserIconURL;
 
+/**
+ * Property indicating if the user is being followed, valid only when logged in.
+ */
+@property (nonatomic, readonly) BOOL following;
+
 @end
