@@ -1,173 +1,125 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>LSContentManagerDelegate Protocol Reference</title>
-		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
-		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.2 (build 963)" />
-	</head>
-	<body>
-		<header id="top_header">
-			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Littlstar SDK </a></h1>
-				<a id="developerHome" href="../index.html">Littlstar</a>
-			</div>
+<head>
+	<meta charset="utf-8">
+
+	<title>LSContentManagerDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
 			
-			<div id="title" role="banner">
-				<h1 class="hideInXcode">LSContentManagerDelegate Protocol Reference</h1>
-			</div>
-			<ul id="headerButtons" role="toolbar">
-				<li id="toc_button">
-					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
-				</li>
-				<li id="jumpto_button" role="navigation">
-					<select id="jumpTo">
+			<h1 id="library-title">
+				<a href="../index.html">LittlstarSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Little Star Media, Inc. (Littlstar).</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
 	<option value="overview">Overview</option>
 	
-	
+
 	
 	
 	<option value="tasks">Tasks</option>
 	
 	
+
 	
 	
+
 	
+
 	
-	
-	
-	
-	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/lsContentManagerDidCancelDownloading:videoItem:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidCancelDownloading:videoItem:</option>
-	
-	<option value="//api/name/lsContentManagerDidFailDownloading:videoItem:failDescription:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidFailDownloading:videoItem:failDescription:</option>
-	
-	<option value="//api/name/lsContentManagerDidFinishDownloading:videoItem:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidFinishDownloading:videoItem:</option>
-	
-	<option value="//api/name/lsContentManagerDidFinishLoginUser:user:error:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidFinishLoginUser:user:error:</option>
-	
-	<option value="//api/name/lsContentManagerDidFinishRegisterUser:user:error:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidFinishRegisterUser:user:error:</option>
-	
-	<option value="//api/name/lsContentManagerDidFollowUser:user:error:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidFollowUser:user:error:</option>
-	
-	<option value="//api/name/lsContentManagerDidGetCategories:categories:error:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidGetCategories:categories:error:</option>
-	
-	<option value="//api/name/lsContentManagerDidGetUser:user:error:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidGetUser:user:error:</option>
-	
-	<option value="//api/name/lsContentManagerDidGetUserFeedVideoItems:videoItems:error:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidGetUserFeedVideoItems:videoItems:error:</option>
-	
-	<option value="//api/name/lsContentManagerDidGetUserFollowers:userFollowers:error:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidGetUserFollowers:userFollowers:error:</option>
-	
-	<option value="//api/name/lsContentManagerDidGetUserFollowings:userFollowings:error:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidGetUserFollowings:userFollowings:error:</option>
-	
-	<option value="//api/name/lsContentManagerDidGetUserVideoItems:videoItems:error:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidGetUserVideoItems:videoItems:error:</option>
-	
-	<option value="//api/name/lsContentManagerDidGetVideoById:videoItem:error:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidGetVideoById:videoItem:error:</option>
-	
-	<option value="//api/name/lsContentManagerDidGetVideosByCategory:videoItems:error:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidGetVideosByCategory:videoItems:error:</option>
-	
-	<option value="//api/name/lsContentManagerDidRefreshVideoItem:videoItem:error:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidRefreshVideoItem:videoItem:error:</option>
-	
-	<option value="//api/name/lsContentManagerDidStartDownloading:videoItem:totalBytes:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidStartDownloading:videoItem:totalBytes:</option>
-	
-	<option value="//api/name/lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:">&nbsp;&nbsp;&nbsp;&nbsp;- lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:</option>
-	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/lsContentManagerDidCancelDownloading:videoItem:">- lsContentManagerDidCancelDownloading:videoItem:</option>
+		
+		<option value="//api/name/lsContentManagerDidFailDownloading:videoItem:failDescription:">- lsContentManagerDidFailDownloading:videoItem:failDescription:</option>
+		
+		<option value="//api/name/lsContentManagerDidFinishDownloading:videoItem:">- lsContentManagerDidFinishDownloading:videoItem:</option>
+		
+		<option value="//api/name/lsContentManagerDidFinishLoginUser:user:error:">- lsContentManagerDidFinishLoginUser:user:error:</option>
+		
+		<option value="//api/name/lsContentManagerDidFinishRegisterUser:user:error:">- lsContentManagerDidFinishRegisterUser:user:error:</option>
+		
+		<option value="//api/name/lsContentManagerDidFollowUser:user:error:">- lsContentManagerDidFollowUser:user:error:</option>
+		
+		<option value="//api/name/lsContentManagerDidGetCategories:categories:error:">- lsContentManagerDidGetCategories:categories:error:</option>
+		
+		<option value="//api/name/lsContentManagerDidGetUser:user:error:">- lsContentManagerDidGetUser:user:error:</option>
+		
+		<option value="//api/name/lsContentManagerDidGetUserFeedVideoItems:videoItems:error:">- lsContentManagerDidGetUserFeedVideoItems:videoItems:error:</option>
+		
+		<option value="//api/name/lsContentManagerDidGetUserFollowers:userFollowers:error:">- lsContentManagerDidGetUserFollowers:userFollowers:error:</option>
+		
+		<option value="//api/name/lsContentManagerDidGetUserFollowings:userFollowings:error:">- lsContentManagerDidGetUserFollowings:userFollowings:error:</option>
+		
+		<option value="//api/name/lsContentManagerDidGetUserVideoItems:videoItems:error:">- lsContentManagerDidGetUserVideoItems:videoItems:error:</option>
+		
+		<option value="//api/name/lsContentManagerDidGetVideoById:videoItem:error:">- lsContentManagerDidGetVideoById:videoItem:error:</option>
+		
+		<option value="//api/name/lsContentManagerDidGetVideosByCategory:videoItems:error:">- lsContentManagerDidGetVideosByCategory:videoItems:error:</option>
+		
+		<option value="//api/name/lsContentManagerDidRefreshVideoItem:videoItem:error:">- lsContentManagerDidRefreshVideoItem:videoItem:error:</option>
+		
+		<option value="//api/name/lsContentManagerDidStartDownloading:videoItem:totalBytes:">- lsContentManagerDidStartDownloading:videoItem:totalBytes:</option>
+		
+		<option value="//api/name/lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:">- lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:</option>
+		
+	</optgroup>
 	
 	
 </select>
-				</li>
-			</ul>
-		</header>
-		<nav id="tocContainer" class="isShowingTOC">
-			<ul id="toc" role="tree">
-				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
 
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">LSContentManagerDelegate Protocol Reference</h1>
 
-
-
-<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
-	
-</ul></li>
-
-
-
-
-
-
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidCancelDownloading:videoItem:">lsContentManagerDidCancelDownloading:videoItem:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidFailDownloading:videoItem:failDescription:">lsContentManagerDidFailDownloading:videoItem:failDescription:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidFinishDownloading:videoItem:">lsContentManagerDidFinishDownloading:videoItem:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidFinishLoginUser:user:error:">lsContentManagerDidFinishLoginUser:user:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidFinishRegisterUser:user:error:">lsContentManagerDidFinishRegisterUser:user:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidFollowUser:user:error:">lsContentManagerDidFollowUser:user:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidGetCategories:categories:error:">lsContentManagerDidGetCategories:categories:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidGetUser:user:error:">lsContentManagerDidGetUser:user:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidGetUserFeedVideoItems:videoItems:error:">lsContentManagerDidGetUserFeedVideoItems:videoItems:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidGetUserFollowers:userFollowers:error:">lsContentManagerDidGetUserFollowers:userFollowers:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidGetUserFollowings:userFollowings:error:">lsContentManagerDidGetUserFollowings:userFollowings:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidGetUserVideoItems:videoItems:error:">lsContentManagerDidGetUserVideoItems:videoItems:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidGetVideoById:videoItem:error:">lsContentManagerDidGetVideoById:videoItem:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidGetVideosByCategory:videoItems:error:">lsContentManagerDidGetVideosByCategory:videoItems:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidRefreshVideoItem:videoItem:error:">lsContentManagerDidRefreshVideoItem:videoItem:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidStartDownloading:videoItem:totalBytes:">lsContentManagerDidStartDownloading:videoItem:totalBytes:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:">lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:</a></span></li>
-	
-</ul></li>
-
-
-			</ul>
-		</nav>
-		<article>
-			<div id="contents" class="isShowingTOC" role="main">
-				<a title="LSContentManagerDelegate Protocol Reference" name="top"></a>
-				<div class="main-navigation navigation-top">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="header">
-					<div class="section-header">
-						<h1 class="title title-header">LSContentManagerDelegate Protocol Reference</h1>
-					</div>		
-				</div>
-				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Declared in</td>
-	<td class="specification-value">LSContentManager.h</td>
+	<th>Declared in</th>
+	<td>LSContentManager.h</td>
 </tr>
 						</tbody></table></div>
 					
-                    
+
                     
 					
 					<div class="section section-overview">
@@ -178,1389 +130,1299 @@ delegates of the <a href="../Classes/LSContentManager.html">LSContentManager</a>
 					</div>
 					
 					
-					
+
 					
 					
 					<div class="section section-tasks">
 						<a title="Tasks" name="tasks"></a>
-						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
-						
+
 						
 						
 
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidFinishLoginUser:user:error:">&ndash;&nbsp;lsContentManagerDidFinishLoginUser:user:error:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidFinishRegisterUser:user:error:">&ndash;&nbsp;lsContentManagerDidFinishRegisterUser:user:error:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidGetUser:user:error:">&ndash;&nbsp;lsContentManagerDidGetUser:user:error:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidGetVideoById:videoItem:error:">&ndash;&nbsp;lsContentManagerDidGetVideoById:videoItem:error:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidGetUserVideoItems:videoItems:error:">&ndash;&nbsp;lsContentManagerDidGetUserVideoItems:videoItems:error:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidRefreshVideoItem:videoItem:error:">&ndash;&nbsp;lsContentManagerDidRefreshVideoItem:videoItem:error:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidGetCategories:categories:error:">&ndash;&nbsp;lsContentManagerDidGetCategories:categories:error:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidGetVideosByCategory:videoItems:error:">&ndash;&nbsp;lsContentManagerDidGetVideosByCategory:videoItems:error:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidGetUserFeedVideoItems:videoItems:error:">&ndash;&nbsp;lsContentManagerDidGetUserFeedVideoItems:videoItems:error:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidGetUserFollowers:userFollowers:error:">&ndash;&nbsp;lsContentManagerDidGetUserFollowers:userFollowers:error:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidGetUserFollowings:userFollowings:error:">&ndash;&nbsp;lsContentManagerDidGetUserFollowings:userFollowings:error:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidFollowUser:user:error:">&ndash;&nbsp;lsContentManagerDidFollowUser:user:error:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidStartDownloading:videoItem:totalBytes:">&ndash;&nbsp;lsContentManagerDidStartDownloading:videoItem:totalBytes:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidFailDownloading:videoItem:failDescription:">&ndash;&nbsp;lsContentManagerDidFailDownloading:videoItem:failDescription:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidFinishDownloading:videoItem:">&ndash;&nbsp;lsContentManagerDidFinishDownloading:videoItem:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:">&ndash;&nbsp;lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/lsContentManagerDidCancelDownloading:videoItem:">&ndash;&nbsp;lsContentManagerDidCancelDownloading:videoItem:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li>
-						</ul>
-						
-					</div>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidCancelDownloading:videoItem:" title="lsContentManagerDidCancelDownloading:videoItem:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidCancelDownloading:videoItem:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function to tell the caller that video download was cancelled.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidCancelDownloading:(LSContentManager *)<em>downloader</em> videoItem:(LSVideoItem *)<em>videoItem</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>downloader</em></dt>
-			<dd><p>Content manager used to download the video</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>videoItem</em></dt>
-			<dd><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a> of which download was cancelled</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidFailDownloading:videoItem:failDescription:" title="lsContentManagerDidFailDownloading:videoItem:failDescription:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidFailDownloading:videoItem:failDescription:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function to notify caller if video dowloading fails.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidFailDownloading:(LSContentManager *)<em>downloader</em> videoItem:(LSVideoItem *)<em>videoItem</em> failDescription:(NSString *)<em>failDescription</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>downloader</em></dt>
-			<dd><p>Content manager used to download the video</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>videoItem</em></dt>
-			<dd><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a> that failed to download</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>failDescription</em></dt>
-			<dd><p>Failure description</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidFinishDownloading:videoItem:" title="lsContentManagerDidFinishDownloading:videoItem:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidFinishDownloading:videoItem:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function to notify caller that video downloading finished.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidFinishDownloading:(LSContentManager *)<em>downloader</em> videoItem:(LSVideoItem *)<em>videoItem</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>downloader</em></dt>
-			<dd><p>Content manager used to download the video</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>videoItem</em></dt>
-			<dd><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a> that finished the download</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/lsContentManagerDidFinishLoginUser:user:error:" title="lsContentManagerDidFinishLoginUser:user:error:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidFinishLoginUser:user:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function to notify the caller that login was successfull. If there is an error, the user parameter is nil and error message shows the reason.</p>
-	</div>		
-	
-    
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidFinishLoginUser:user:error:">&ndash;&nbsp;lsContentManagerDidFinishLoginUser:user:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidFinishLoginUser:(LSContentManager *)<em>manager</em> user:(LSUser *)<em>user</em> error:(NSString *)<em>error</em></code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>Content manager used to login</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>user</em></dt>
-			<dd><p>User logged in</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>Error message as string.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
+		<div class="method-info-container">
 			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
 			
-			<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidFinishRegisterUser:user:error:" title="lsContentManagerDidFinishRegisterUser:user:error:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidFinishRegisterUser:user:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function to notify the caller that registration was successfull. If there is an error, the user parameter is nil and error message shows the reason.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidFinishRegisterUser:(LSContentManager *)<em>manager</em> user:(LSUser *)<em>user</em> error:(NSString *)<em>error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>Content manager used to register</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>user</em></dt>
-			<dd><p>Registered user</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>Error message as string.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>NOTE: The user needs to log in after regitering in order to use e.g. starForVideo or downvoteForVideo methods.</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidFollowUser:user:error:" title="lsContentManagerDidFollowUser:user:error:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidFollowUser:user:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function called when the requested follow/unfollow finalizes. The updated user is passed as a parameter. If there is an error, the lsUser parameter is nil and error message shows the reason.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidFollowUser:(LSContentManager *)<em>manager</em> user:(LSUser *)<em>user</em> error:(NSString *)<em>error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>Content manager used to request video items</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>Error message as string.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>lsUser</em></dt>
-			<dd><p>Updated user (lsUser) showing the follow status.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidGetCategories:categories:error:" title="lsContentManagerDidGetCategories:categories:error:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidGetCategories:categories:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function called when all the categories are collected. If there is an error, the categories array parameter is nil and error message shows the reason.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetCategories:(LSContentManager *)<em>manager</em> categories:(NSArray *)<em>categories</em> error:(NSString *)<em>error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>Content manager used to request video items</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>categories</em></dt>
-			<dd><p>Array of requested categories</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>Error message as string.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSCategory.html">LSCategory</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidGetUser:user:error:" title="lsContentManagerDidGetUser:user:error:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidGetUser:user:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function to notify that Littlstar user was found. If there is an error, the user parameter is nil and error message shows the reason.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetUser:(LSContentManager *)<em>manager</em> user:(LSUser *)<em>user</em> error:(NSString *)<em>error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>Content manager used to fetch the Littlstar user</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>user</em></dt>
-			<dd><p>The full info of requested Littlstar user, wrapped in <a href="../Classes/LSUser.html">LSUser</a> object</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>Error message as string.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidGetUserFeedVideoItems:videoItems:error:" title="lsContentManagerDidGetUserFeedVideoItems:videoItems:error:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidGetUserFeedVideoItems:videoItems:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function called when the requested video items for a selected user&rsquo;s feed are collected. If there is an error, the videoItems array parameter is nil and error message shows the reason.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetUserFeedVideoItems:(LSContentManager *)<em>manager</em> videoItems:(NSArray *)<em>videoItems</em> error:(NSString *)<em>error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>Content manager used to request video items</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>videoItems</em></dt>
-			<dd><p>Array of requested video items</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>Error message as string.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidGetUserFollowers:userFollowers:error:" title="lsContentManagerDidGetUserFollowers:userFollowers:error:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidGetUserFollowers:userFollowers:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function called when the requested list of followers is finalized. The list of users that follow the user (<a href="../Classes/LSUser.html">LSUser</a>) is passed as a parameter. If there is an error, the userFollowers array parameter is nil and error message shows the reason.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetUserFollowers:(LSContentManager *)<em>manager</em> userFollowers:(NSArray *)<em>userFollowers</em> error:(NSString *)<em>error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>Content manager used to request video items</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>userFollowers</em></dt>
-			<dd><p>Array of followers (<a href="../Classes/LSUser.html">LSUser</a>)</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>Error message as string.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidGetUserFollowings:userFollowings:error:" title="lsContentManagerDidGetUserFollowings:userFollowings:error:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidGetUserFollowings:userFollowings:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function called when the requested list of followings is finalized. The list of followed users (by <a href="../Classes/LSUser.html">LSUser</a>) is passed as a parameter. If there is an error, the userFollowings array parameter is nil and error message shows the reason.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetUserFollowings:(LSContentManager *)<em>manager</em> userFollowings:(NSArray *)<em>userFollowings</em> error:(NSString *)<em>error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>Content manager used to request video items</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>userFollowings</em></dt>
-			<dd><p>Array of followings (<a href="../Classes/LSUser.html">LSUser</a>)</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>Error message as string.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidGetUserVideoItems:videoItems:error:" title="lsContentManagerDidGetUserVideoItems:videoItems:error:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidGetUserVideoItems:videoItems:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function called when the requested user&rsquo;s video items are collected. If there is an error, the videoItems array parameter is nil and error message shows the reason.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetUserVideoItems:(LSContentManager *)<em>manager</em> videoItems:(NSArray *)<em>videoItems</em> error:(NSString *)<em>error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>Content manager used to request video items</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>videoItems</em></dt>
-			<dd><p>Array of requested video items</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>Error message as string.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidGetVideoById:videoItem:error:" title="lsContentManagerDidGetVideoById:videoItem:error:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidGetVideoById:videoItem:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function indicating that the requested video item was found. If there is an error, the videoItem parameter is nil and error message shows the reason.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetVideoById:(LSContentManager *)<em>manager</em> videoItem:(LSVideoItem *)<em>videoItem</em> error:(NSString *)<em>error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>Content manager used to update the requested item</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>videoItem</em></dt>
-			<dd><p>Requested video item</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>Error message as string.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidGetVideosByCategory:videoItems:error:" title="lsContentManagerDidGetVideosByCategory:videoItems:error:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidGetVideosByCategory:videoItems:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function called when the requested video items for a selected category are collected. If there is an error, the videoItems array parameter is nil and error message shows the reason.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetVideosByCategory:(LSContentManager *)<em>manager</em> videoItems:(NSArray *)<em>videoItems</em> error:(NSString *)<em>error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>Content manager used to request video items</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>videoItems</em></dt>
-			<dd><p>Array of requested video items</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>Error message as string.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidRefreshVideoItem:videoItem:error:" title="lsContentManagerDidRefreshVideoItem:videoItem:error:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidRefreshVideoItem:videoItem:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function indicating that the requested video item was updated and UI can be updated as well. If there is an error, the videoItem parameter is nil and error message shows the reason.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidRefreshVideoItem:(LSContentManager *)<em>manager</em> videoItem:(LSVideoItem *)<em>videoItem</em> error:(NSString *)<em>error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>Content manager used for refreshing</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>videoItem</em></dt>
-			<dd><p>Updated video item</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>Error message as string.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidStartDownloading:videoItem:totalBytes:" title="lsContentManagerDidStartDownloading:videoItem:totalBytes:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidStartDownloading:videoItem:totalBytes:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function to tell the caller that video downloading has started.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidStartDownloading:(LSContentManager *)<em>downloader</em> videoItem:(LSVideoItem *)<em>videoItem</em> totalBytes:(long long)<em>totalBytes</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>downloader</em></dt>
-			<dd><p>Content manager used to download the video</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>videoItem</em></dt>
-			<dd><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a> that started to download</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>totalBytes</em></dt>
-			<dd><p>Video size in bytes</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:" title="lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:"></a>
-	<h3 class="subsubtitle method-title">lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Delegate function to notify caller about video downloading progress.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidUpdateProgress:(LSContentManager *)<em>downloader</em> videoItem:(LSVideoItem *)<em>videoItem</em> downloadedBytes:(long long)<em>downloadedBytes</em> totalBytes:(long long)<em>totalBytes</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>downloader</em></dt>
-			<dd><p>Content manager used to download the video</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>videoItem</em></dt>
-			<dd><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a> that is downloading</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>downloadedBytes</em></dt>
-			<dd><p>Downloaded bytes</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>totalBytes</em></dt>
-			<dd><p>Total size of the video in bytes</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
-			
-			<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">LSContentManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
-					
-                    
-                    
-				</div>
-				<div class="main-navigation navigation-bottom">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="footer">
-					<hr />
-					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015 Littlstar. All rights reserved. (Last updated: 2015-04-29)</span><br />
-						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
-						
-					</div>
-				</div>
+			<div class="method-subsection brief-description">
+				<p>Delegate function to notify the caller that login was successfull. If there is an error, the user parameter is nil and error message shows the reason.</p>
 			</div>
-		</article>
-		<script type="text/javascript">
-			function jumpToChange()
-			{
-				window.location.hash = this.options[this.selectedIndex].value;
-			}
 			
-			function toggleTOC()
-			{
-				var contents = document.getElementById('contents');
-				var tocContainer = document.getElementById('tocContainer');
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidFinishLoginUser:(LSContentManager *)<em>manager</em> user:(LSUser *)<em>user</em> error:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
 				
-				if (this.getAttribute('class') == 'open')
-				{
-					this.setAttribute('class', '');
-					contents.setAttribute('class', '');
-					tocContainer.setAttribute('class', '');
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>Content manager used to login</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User logged in</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error message as string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
 					
-					window.name = "hideTOC";
-				}
-				else
-				{
-					this.setAttribute('class', 'open');
-					contents.setAttribute('class', 'isShowingTOC');
-					tocContainer.setAttribute('class', 'isShowingTOC');
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
 					
-					window.name = "";
-				}
-				return false;
-			}
+					<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
+					
+				</ul>
+			</div>
 			
-			function toggleTOCEntryChildren(e)
-			{
-				e.stopPropagation();
-				var currentClass = this.getAttribute('class');
-				if (currentClass == 'children') {
-					this.setAttribute('class', 'children open');
-				}
-				else if (currentClass == 'children open') {
-					this.setAttribute('class', 'children');
-				}
-				return false;
-			}
+
 			
-			function tocEntryClick(e)
-			{
-				e.stopPropagation();
-				return true;
-			}
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
 			
-			function init()
-			{
-				var selectElement = document.getElementById('jumpTo');
-				selectElement.addEventListener('change', jumpToChange, false);
-				
-				var tocButton = document.getElementById('table_of_contents');
-				tocButton.addEventListener('click', toggleTOC, false);
-				
-				var taskTreeItem = document.getElementById('task_treeitem');
-				if (taskTreeItem.getElementsByTagName('li').length > 0)
-				{
-					taskTreeItem.setAttribute('class', 'children');
-					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
-				}
-				
-				var tocList = document.getElementById('toc');
-				
-				var tocEntries = tocList.getElementsByTagName('li');
-				for (var i = 0; i < tocEntries.length; i++) {
-					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
-				}
-				
-				var tocLinks = tocList.getElementsByTagName('a');
-				for (var i = 0; i < tocLinks.length; i++) {
-					tocLinks[i].addEventListener('click', tocEntryClick, false);
-				}
-				
-				if (window.name == "hideTOC") {
-					toggleTOC.call(tocButton);
-				}
-			}
 			
-			window.onload = init;
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidFinishRegisterUser:user:error:" title="lsContentManagerDidFinishRegisterUser:user:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidFinishRegisterUser:user:error:">&ndash;&nbsp;lsContentManagerDidFinishRegisterUser:user:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
 			
-			// If showing in Xcode, hide the TOC and Header
-			if (navigator.userAgent.match(/xcode/i)) {
-				document.getElementById("contents").className = "hideInXcode"
-				document.getElementById("tocContainer").className = "hideInXcode"
-				document.getElementById("top_header").className = "hideInXcode"
-			}
 			
-		</script>
-	</body>
+			<div class="method-subsection brief-description">
+				<p>Delegate function to notify the caller that registration was successfull. If there is an error, the user parameter is nil and error message shows the reason.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidFinishRegisterUser:(LSContentManager *)<em>manager</em> user:(LSUser *)<em>user</em> error:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>Content manager used to register</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>Registered user</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error message as string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: The user needs to log in after regitering in order to use e.g. starForVideo or downvoteForVideo methods.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidGetUser:user:error:" title="lsContentManagerDidGetUser:user:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidGetUser:user:error:">&ndash;&nbsp;lsContentManagerDidGetUser:user:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function to notify that Littlstar user was found. If there is an error, the user parameter is nil and error message shows the reason.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetUser:(LSContentManager *)<em>manager</em> user:(LSUser *)<em>user</em> error:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>Content manager used to fetch the Littlstar user</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>The full info of requested Littlstar user, wrapped in <a href="../Classes/LSUser.html">LSUser</a> object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error message as string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidGetVideoById:videoItem:error:" title="lsContentManagerDidGetVideoById:videoItem:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidGetVideoById:videoItem:error:">&ndash;&nbsp;lsContentManagerDidGetVideoById:videoItem:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function indicating that the requested video item was found. If there is an error, the videoItem parameter is nil and error message shows the reason.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetVideoById:(LSContentManager *)<em>manager</em> videoItem:(LSVideoItem *)<em>videoItem</em> error:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>Content manager used to update the requested item</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoItem</code></th>
+						<td><p>Requested video item</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error message as string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidGetUserVideoItems:videoItems:error:" title="lsContentManagerDidGetUserVideoItems:videoItems:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidGetUserVideoItems:videoItems:error:">&ndash;&nbsp;lsContentManagerDidGetUserVideoItems:videoItems:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function called when the requested user&rsquo;s video items are collected. If there is an error, the videoItems array parameter is nil and error message shows the reason.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetUserVideoItems:(LSContentManager *)<em>manager</em> videoItems:(NSArray *)<em>videoItems</em> error:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>Content manager used to request video items</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoItems</code></th>
+						<td><p>Array of requested video items</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error message as string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidRefreshVideoItem:videoItem:error:" title="lsContentManagerDidRefreshVideoItem:videoItem:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidRefreshVideoItem:videoItem:error:">&ndash;&nbsp;lsContentManagerDidRefreshVideoItem:videoItem:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function indicating that the requested video item was updated and UI can be updated as well. If there is an error, the videoItem parameter is nil and error message shows the reason.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidRefreshVideoItem:(LSContentManager *)<em>manager</em> videoItem:(LSVideoItem *)<em>videoItem</em> error:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>Content manager used for refreshing</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoItem</code></th>
+						<td><p>Updated video item</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error message as string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidGetCategories:categories:error:" title="lsContentManagerDidGetCategories:categories:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidGetCategories:categories:error:">&ndash;&nbsp;lsContentManagerDidGetCategories:categories:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function called when all the categories are collected. If there is an error, the categories array parameter is nil and error message shows the reason.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetCategories:(LSContentManager *)<em>manager</em> categories:(NSArray *)<em>categories</em> error:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>Content manager used to request video items</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>categories</code></th>
+						<td><p>Array of requested categories</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error message as string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSCategory.html">LSCategory</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidGetVideosByCategory:videoItems:error:" title="lsContentManagerDidGetVideosByCategory:videoItems:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidGetVideosByCategory:videoItems:error:">&ndash;&nbsp;lsContentManagerDidGetVideosByCategory:videoItems:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function called when the requested video items for a selected category are collected. If there is an error, the videoItems array parameter is nil and error message shows the reason.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetVideosByCategory:(LSContentManager *)<em>manager</em> videoItems:(NSArray *)<em>videoItems</em> error:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>Content manager used to request video items</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoItems</code></th>
+						<td><p>Array of requested video items</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error message as string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidGetUserFeedVideoItems:videoItems:error:" title="lsContentManagerDidGetUserFeedVideoItems:videoItems:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidGetUserFeedVideoItems:videoItems:error:">&ndash;&nbsp;lsContentManagerDidGetUserFeedVideoItems:videoItems:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function called when the requested video items for a selected user&rsquo;s feed are collected. If there is an error, the videoItems array parameter is nil and error message shows the reason.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetUserFeedVideoItems:(LSContentManager *)<em>manager</em> videoItems:(NSArray *)<em>videoItems</em> error:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>Content manager used to request video items</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoItems</code></th>
+						<td><p>Array of requested video items</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error message as string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidGetUserFollowers:userFollowers:error:" title="lsContentManagerDidGetUserFollowers:userFollowers:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidGetUserFollowers:userFollowers:error:">&ndash;&nbsp;lsContentManagerDidGetUserFollowers:userFollowers:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function called when the requested list of followers is finalized. The list of users that follow the user (<a href="../Classes/LSUser.html">LSUser</a>) is passed as a parameter. If there is an error, the userFollowers array parameter is nil and error message shows the reason.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetUserFollowers:(LSContentManager *)<em>manager</em> userFollowers:(NSArray *)<em>userFollowers</em> error:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>Content manager used to request video items</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userFollowers</code></th>
+						<td><p>Array of followers (<a href="../Classes/LSUser.html">LSUser</a>)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error message as string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidGetUserFollowings:userFollowings:error:" title="lsContentManagerDidGetUserFollowings:userFollowings:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidGetUserFollowings:userFollowings:error:">&ndash;&nbsp;lsContentManagerDidGetUserFollowings:userFollowings:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function called when the requested list of followings is finalized. The list of followed users (by <a href="../Classes/LSUser.html">LSUser</a>) is passed as a parameter. If there is an error, the userFollowings array parameter is nil and error message shows the reason.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidGetUserFollowings:(LSContentManager *)<em>manager</em> userFollowings:(NSArray *)<em>userFollowings</em> error:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>Content manager used to request video items</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userFollowings</code></th>
+						<td><p>Array of followings (<a href="../Classes/LSUser.html">LSUser</a>)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error message as string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidFollowUser:user:error:" title="lsContentManagerDidFollowUser:user:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidFollowUser:user:error:">&ndash;&nbsp;lsContentManagerDidFollowUser:user:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function called when the requested follow/unfollow finalizes. The updated user is passed as a parameter. If there is an error, the lsUser parameter is nil and error message shows the reason.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidFollowUser:(LSContentManager *)<em>manager</em> user:(LSUser *)<em>user</em> error:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>Content manager used to request video items</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error message as string.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lsUser</code></th>
+						<td><p>Updated user (lsUser) showing the follow status.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidStartDownloading:videoItem:totalBytes:" title="lsContentManagerDidStartDownloading:videoItem:totalBytes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidStartDownloading:videoItem:totalBytes:">&ndash;&nbsp;lsContentManagerDidStartDownloading:videoItem:totalBytes:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function to tell the caller that video downloading has started.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidStartDownloading:(LSContentManager *)<em>downloader</em> videoItem:(LSVideoItem *)<em>videoItem</em> totalBytes:(long long)<em>totalBytes</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloader</code></th>
+						<td><p>Content manager used to download the video</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoItem</code></th>
+						<td><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a> that started to download</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>totalBytes</code></th>
+						<td><p>Video size in bytes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidFailDownloading:videoItem:failDescription:" title="lsContentManagerDidFailDownloading:videoItem:failDescription:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidFailDownloading:videoItem:failDescription:">&ndash;&nbsp;lsContentManagerDidFailDownloading:videoItem:failDescription:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function to notify caller if video dowloading fails.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidFailDownloading:(LSContentManager *)<em>downloader</em> videoItem:(LSVideoItem *)<em>videoItem</em> failDescription:(NSString *)<em>failDescription</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloader</code></th>
+						<td><p>Content manager used to download the video</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoItem</code></th>
+						<td><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a> that failed to download</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failDescription</code></th>
+						<td><p>Failure description</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidFinishDownloading:videoItem:" title="lsContentManagerDidFinishDownloading:videoItem:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidFinishDownloading:videoItem:">&ndash;&nbsp;lsContentManagerDidFinishDownloading:videoItem:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function to notify caller that video downloading finished.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidFinishDownloading:(LSContentManager *)<em>downloader</em> videoItem:(LSVideoItem *)<em>videoItem</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloader</code></th>
+						<td><p>Content manager used to download the video</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoItem</code></th>
+						<td><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a> that finished the download</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:" title="lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:">&ndash;&nbsp;lsContentManagerDidUpdateProgress:videoItem:downloadedBytes:totalBytes:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function to notify caller about video downloading progress.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidUpdateProgress:(LSContentManager *)<em>downloader</em> videoItem:(LSVideoItem *)<em>videoItem</em> downloadedBytes:(long long)<em>downloadedBytes</em> totalBytes:(long long)<em>totalBytes</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloader</code></th>
+						<td><p>Content manager used to download the video</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoItem</code></th>
+						<td><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a> that is downloading</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadedBytes</code></th>
+						<td><p>Downloaded bytes</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>totalBytes</code></th>
+						<td><p>Total size of the video in bytes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lsContentManagerDidCancelDownloading:videoItem:" title="lsContentManagerDidCancelDownloading:videoItem:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lsContentManagerDidCancelDownloading:videoItem:">&ndash;&nbsp;lsContentManagerDidCancelDownloading:videoItem:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate function to tell the caller that video download was cancelled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lsContentManagerDidCancelDownloading:(LSContentManager *)<em>downloader</em> videoItem:(LSVideoItem *)<em>videoItem</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloader</code></th>
+						<td><p>Content manager used to download the video</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoItem</code></th>
+						<td><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a> of which download was cancelled</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Little Star Media, Inc. (Littlstar). All rights reserved. Updated: 2015-05-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
 </html>

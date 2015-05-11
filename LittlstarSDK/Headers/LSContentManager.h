@@ -2,8 +2,8 @@
 //  LSContentManager.h
 //  LittlstarSDK
 //
-//  Created by Hannu Limma on 13.04.2015.
-//  Copyright (c) 2015 Finwe Ltd. All rights reserved.
+//  Created by Littlstar on 11/05/2015
+//  Copyright (c) 2015 Little Star Media, Inc. (Littlstar). All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -28,7 +28,7 @@
 /**
  * Mandatory, url to license file, the name of the file needs to match the application bundle name in order to enable the SDK 360 video features, e.g. com.littlstar.example-app.key.lic
  *
- * NOTE: Also the content of the license file needs to match the platform ("iOS"), application version (version=LSOrion) and the bundle ID of the application (e.g. com.littlstar.example-app).
+ * NOTE: Also the content of the license file needs to match the platform ("iOS"), application version (version=Littlstar) and the bundle ID of the application (e.g. com.littlstar.example-app).
  */
 @property (nonatomic) NSURL* licenseFileURL;
 

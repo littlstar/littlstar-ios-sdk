@@ -17,7 +17,7 @@ The Littlstar SDK is a developer library to easily build and implement mobile ap
 What's new
 -------
 
-Build 1.1.0, Apr 29, 2015:
+Build 1.1.1, May 11, 2015:
 * Initial Commit
 
 Overview
@@ -25,7 +25,7 @@ Overview
 
 The Littlstar SDK provides a new iOS library that can be included to 3rd party iOS apps and that greatly simplifies building 360° video support to an app.
 
-Playing a single 360° video from the Littlstar back-end requires only a few lines of code. This is achieved by providing a component for managing all communication with the Littlstar back-end service in an asynchronous manner (**LSContentManager**), and a 360° video player component that is integrated with the Littlstar back-end so that the player can be simply dropped in to a UI layout and initialized with a video ID (**LSOrion1View**).
+Playing a single 360° video from the Littlstar back-end requires only a few lines of code. This is achieved by providing a component for managing all communication with the Littlstar back-end service in an asynchronous manner (**LSContentManager**), and a 360° video player component that is integrated with the Littlstar back-end so that the player can be simply dropped in to a UI layout and initialized with a video ID (**LSPlayerView**).
 
 To summarize, the Littlstar SDK contains the following main components and purpose:
 
@@ -33,7 +33,7 @@ To summarize, the Littlstar SDK contains the following main components and purpo
 2. **LSVideoItem** is a data class that represents a single video that is hosted on the back-end.
 3. **LSCategory** is a data class that represents a single video category of which videos can be requested in a separate call.
 4. **LSContentManager** for accessing hosted 360° video content by making requests to the back-end.
-5. **Orion1View** to view and play 360 degree video content.
+5. **LSPlayerView** to view and play 360 degree video content.
 
 These are covered in detail in the included API documentation. To get you started with ease, basic usage examples will be given in the following chapters with code snippets.
 
@@ -49,7 +49,7 @@ The Littlstar SDK for iOS supports all iOS devices starting iOS version 7.0.
 
 License
 -------
-By default the SDK works as a **trial version**. To create your own applications, you must acquire a **license** file per each published application. In order to enable the Littlstar SDK 360 video features the right license file (e.g. com.littlstar.example-app.key.lic) needs to be included in the project. It needs to match the platform (at least "iOS"), application version (version=LSOrion) and the bundle ID of the application (e.g. com.littlstar.example-app).
+By default the SDK works as a **trial version**. To create your own applications, you must acquire a **license** file per each published application. In order to enable the Littlstar SDK 360 video features the right license file (e.g. com.littlstar.example-app.key.lic) needs to be included in the project. It needs to match the platform (at least "iOS"), application version (version=Littlstar) and the bundle ID of the application (e.g. com.littlstar.example-app).
 An example header of a license file:
 
 ```
@@ -59,7 +59,7 @@ enableSourceUrlExplicit=https://littlstar.com/*
 enableUnknownSourceUrl=false
 logo=none
 platform=ios
-version=LSOrion
+version=Littlstar
 ```
 
 The license may also limit the access to the video service, other than Littlstar.com; 
@@ -70,8 +70,6 @@ if the *enableUnknownSourceUrl* is true also the other Littstar based services m
 #### 3rd Party Licenses & Acknowledgments
 
 For legal reasons, you must include the following acknowledgment somewhere in your application's user interface (must be visible to users). Typically it is placed under "Info" or "About" section with a title "3rd Party Licenses & Acknowledgments".
-
-> 360 video playback is based on Finwe Ltd.'s Orion360 Engine.
 
 Installation
 -------
@@ -143,7 +141,7 @@ To request single *Video Item* from the back-end, use **getVideoItemByVideoId:**
 
 ![Alt text](images/seq2.png "Sequence diagram: getVideoItemByVideoId")
 
-After one or more *Video Item*s has been received from the back-end,  you can select an **LSVideo** item to be played with the 360° player component (**Orion1View**), or show the details and retrieve thumbnail images of multiple **LSVideo** items in a user interface where the *Logged-in User* can select a video to be played.
+After one or more *Video Item*s has been received from the back-end,  you can select an **LSVideo** item to be played with the 360° player component (**LSPlayerView**), or show the details and retrieve thumbnail images of multiple **LSVideo** items in a user interface where the *Logged-in User* can select a video to be played.
 
 To request videos by category (i.e. sports, music, travel, design etc.), method **getVideosByCategory:** can be used. Note that gategory needs to be given as **LSCategory** object. Method **getCategories** can be used to get available categories.
 
@@ -151,13 +149,13 @@ To request videos by category (i.e. sports, music, travel, design etc.), method 
 
 It's also possible to give a star (**starLSVideoItem:lsVideoItem**) and a downvote (**downvoteLSVideoItem:lsVideoItem**) to a *Video Item*. Note that giving stars or downvoting videos requires that user must be logged in (*Logged-in User*). **LSContentManager** provides also methods to log in to an existing user account (**loginUser:password:**) as well as register a new user (**registerUser:email:password:confirmation:**).
 
-###Orion1View
+###LSPlayerView
 
-**Orion1View** is a simple UIView for viewing 360 degree video. To use Orion1View, you need to import *Orion1View.h* header. **Orion1View** is initialized as follows:
+**LSPlayerView** is a simple UIView for viewing 360 degree video. To use LSPlayerView, you need to import *LSPlayerView.h* header. **LSPlayerView** is initialized as follows:
 
 ```
-Orion1View orionView = [[Orion1View alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
-orionView.delegate = self;
+LSPlayerView lsPlayerView = [[LSPlayerView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+lsPlayerView.delegate = self;
 ```
 
 After this, you also need to initialize a selected *Video Item*. Note that same license file need to be given that was used in *Content Manager* initialization.
@@ -165,12 +163,12 @@ After this, you also need to initialize a selected *Video Item*. Note that same 
 ```
 NSString* path = [[NSBundle mainBundle] pathForResource:@"license.key.lic" ofType:nil];
 NSURL *licenseURL = [NSURL fileURLWithPath:path];
-[orionView initVideoWithVideoItem::videoId contentManager:contentManager licenseFileUrl:licenseURL];
+[lsPlayerView initVideoWithVideoItem::videoId contentManager:contentManager licenseFileUrl:licenseURL];
 ```
 
-**Orion1view** delegate method **orion1ViewReadyToPlayVideo:** is called when the requested *Video Item* is ready to be played. Note that video starts playing only after **play:** method has been called (e.g. **[orionView play:0.0]** starts playing the requested video from the beginning). **Orion1View** also provides methods **pause**, **play**,  **seekTo:** and **isPaused**. Note that **Orion1View** inherits **UIView** and therefore inherits also properties and methods provided by UIView (e.g. setting the frame).
+**LSPlayerView** delegate method **lsPlayerViewReadyToPlayVideo:** is called when the requested *Video Item* is ready to be played. Note that video starts playing only after **play:** method has been called (e.g. **[lsPlayerView play:0.0]** starts playing the requested video from the beginning). **LSPlayerView** also provides methods **pause**, **play**,  **seekTo:** and **isPaused**. Note that **LSPlayerView** inherits **UIView** and therefore inherits also properties and methods provided by UIView (e.g. setting the frame).
 
-![Alt text](images/seq3.png "Sequence diagram: Orion1View")
+![Alt text](images/seq3.png "Sequence diagram:LSPlayerView")
 
 Next Steps
 -------------

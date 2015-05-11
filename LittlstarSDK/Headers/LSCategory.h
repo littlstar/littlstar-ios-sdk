@@ -2,8 +2,8 @@
 //  LSCategory.h
 //  LittlstarSDK
 //
-//  Created by Petri Määttä on 27/04/15.
-//  Copyright (c) 2015 Finwe Ltd. All rights reserved.
+//  Created by Littlstar on 11/05/2015
+//  Copyright (c) 2015 Little Star Media, Inc. (Littlstar). All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

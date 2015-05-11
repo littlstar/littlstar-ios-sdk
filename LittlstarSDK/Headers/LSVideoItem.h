@@ -2,12 +2,13 @@
 //  LSVideoItem.h
 //  LittlstarSDK
 //
-//  Created by Petri Määttä on 29/12/14.
-//  Copyright (c) 2014 Finwe Ltd. All rights reserved.
+//  Created by Littlstar on 11/05/2015
+//  Copyright (c) 2015 Little Star Media, Inc. (Littlstar). All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <LittlstarSDK/LSUser.h>
 
 
 /**
@@ -87,6 +88,12 @@ typedef NSUInteger LSVideoDownloadState;
  * User downvote value, valid only when logged in.
  */
 @property (nonatomic, readonly) BOOL downvoted;
+
+/**
+ * Video owner user info.
+ */
+
+@property (nonatomic, readonly) LSUser *user;
 
 /**
  * Download state of a video defined in VideoItem.
