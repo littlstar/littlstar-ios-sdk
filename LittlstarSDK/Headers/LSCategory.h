@@ -14,14 +14,14 @@
 @interface LSCategory : NSObject
 
 /**
- * Unique category ID.
+ * Unique category ID within categories.
  */
 @property (nonatomic, readonly) NSUInteger categoryId;
 
 /**
- * Category name.
+ * Unique item ID in LS service.
  */
-@property (nonatomic, readonly) NSString *categoryName;
+@property (nonatomic, readonly) NSString *slug;
 
 /**
  * Category display name.
@@ -32,5 +32,15 @@
  * Video count per category.
  */
 @property (nonatomic, readonly) NSUInteger categoryVideoCount;
+
+/**
+ * Photo count per category.
+ */
+@property (nonatomic, readonly) NSUInteger categoryPhotoCount;
+
+/**
+ * Thumb image per category.
+ */
+@property (nonatomic, readonly) NSString *thumbURL;
 
 @end

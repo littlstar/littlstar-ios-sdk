@@ -17,8 +17,8 @@ The Littlstar SDK is a developer library to easily build and implement mobile ap
 What's new
 -------
 
-Build 1.1.1, May 11, 2015:
-* Initial Commit
+Build 2.0.0, Jun 12, 2015:
+* Updated API with several functions
 
 Overview
 -------
@@ -31,9 +31,14 @@ To summarize, the Littlstar SDK contains the following main components and purpo
 
 1. **LSUser** is a data class that represents a single user who has signed up to the back-end.
 2. **LSVideoItem** is a data class that represents a single video that is hosted on the back-end.
-3. **LSCategory** is a data class that represents a single video category of which videos can be requested in a separate call.
-4. **LSContentManager** for accessing hosted 360° video content by making requests to the back-end.
-5. **LSPlayerView** to view and play 360 degree video content.
+3. **LSPhotoItem** is a data class that represents a single photo that is hosted on the back-end.
+4. **LSCategory** is a data class that represents a single video category of which videos can be requested in a separate call.
+5. **LSContentManager** for accessing hosted 360° video content by making requests to the back-end.
+6. **LSPlayerView** to view and play 360 degree video content.
+7. **LSChannel** is a data class that represents a channel owned by a user.
+8. **LSComment** is a data class that represents a comment on an item, video or photo.
+9. **LSNotification** is a data class that represents a notification message (action) related to a specific user owned item.
+10. **LSResultPage** is a data container delivering the result items through the API. 
 
 These are covered in detail in the included API documentation. To get you started with ease, basic usage examples will be given in the following chapters with code snippets.
 
@@ -107,9 +112,29 @@ A **LSUser** class describes details of a video user (a registered video service
 
 A **LSVideoItem** object describes details of the 360 degree video data. It contains an unique video ID (**videoId**), which can be used to fetch or refresh the video data, video description (**desc**), title (**title**), URL to thumbnail image (**thumbURL**), number of all given stars (**stars**) and number of all given down-votes (**downvotes**). It also provides information whether a certain user has given a star (**stared**) or down-voted (**downvoted**) the video. Note that **stared** and **downvoted** properties are valid only when the user has been logged in. To use **LSVideoItem** class, import header *LSVideoItem.h*.
 
+###LSPhotoItem
+
+A **LSPhotoItem** object describes details of the 360 degree photo data. It contains an unique photo ID (**photoId**), which can be used to fetch or refresh the photo data, photo description (**desc**), title (**title**), URL to thumbnail image (**thumbURL**), number of all given stars (**stars**) and number of all given down-votes (**downvotes**). It also provides information whether a certain user has given a star (**stared**) or down-voted (**downvoted**) the photo. Note that **stared** and **downvoted** properties are valid only when the user has been logged in. To use **LSPhotoItem** class, import header *LSPhotoItem.h*.
+
 ###LSCategory
 
 A **LSCategory** object describes the basic information of a Littlstar video category; it contains an unique category ID (**categoryId**), an unique category name (**categoryName**), a category title name (**categoryDisplayName**) and finally a video count per category (**categoryVideoCount**).
+
+###LSChannel
+
+A **LSChannel** object describes the basic information of a Littlstar channel; it contains a unique channelId (**channelId**), a unique title (**title**), counts of videos and photos included in channel (**videosCount**) (**photosCount**), creation date (**creationDate**), thumbnail URL (**thumbURL**) and channel owning user (**user**).
+
+### LSComment
+
+A **LSComment** object describes a simple comment given for a Littlstar service item, i.e. photo or video item. The object contains the text field (**text**), creation date (**creationDate**) and commented user (**user**).
+
+### LSNotification
+
+A **LSNotification** object describes a single action related to a user owned item. It contains a unique notificationId (**notificationId**), a string describing the action (**action**), the notification creation date (**creationDate**), the user owning the notification (**user**) and the notification text (**notification**).
+
+###LSResultPage
+
+A **LSResultPage** object is a mere data container of which content depends on the request done to the backend service. The object contains an array of collected items (**itemArray**), the current page number (**currentPage**), the next page available (**nextPage**) and total count of pages to be requested.
 
 ###LSContentManager
 
@@ -133,21 +158,21 @@ To retrieve details of the *Video Provider User*, you request his **LSUser** obj
 [manager getUser:userId];
 ```
 
-Delegate method **lsContentManagerDidGetUser:user:error** is called when the *Video Provider User* has successfully been fetched. After this, the *Video Provider User*'s videos can be loaded by calling **getUserVideoItems:**.  Upon succesful loading, delegate method  **lsContentManagerDidGetUserVideoItems:videoItems:error:** provides on array containing the *Video Provider User*'s all video items.
+Delegate method **lsContentManagerDidGetUser:user:error** is called when the *Video Provider User* has successfully been fetched. After this, the *Video Provider User*'s videos can be loaded by calling **getVideoItemsByUser:**.  Upon succesful loading, delegate method  **lsContentManagerDidGetVideoItemsByUser:videoItems:error:** provides on array containing the *Video Provider User*'s all video items.
 
-![Alt text](images/seq1.png "Sequence diagram: getUserVideoItems")
+![Alt text](images/seq1.png "Sequence diagram: getVideoItemsByUser")
 
-To request single *Video Item* from the back-end, use **getVideoItemByVideoId:** method. Callback method **lsContentManagerDidGetVideoById:videoItem:error:** tells the delegate when the requested *Video Item* has been found.
+To request single *Video Item* from the back-end, use **getVideoItemByVideoId:** method. Callback method **lsContentManagerDidGetVideoById:videoItem:error:** tells the delegate when the requested *Video Item* has been found. Similar functions are available for *Photo Item*.
 
 ![Alt text](images/seq2.png "Sequence diagram: getVideoItemByVideoId")
 
-After one or more *Video Item*s has been received from the back-end,  you can select an **LSVideo** item to be played with the 360° player component (**LSPlayerView**), or show the details and retrieve thumbnail images of multiple **LSVideo** items in a user interface where the *Logged-in User* can select a video to be played.
+After one or more *Video Items* has been received from the back-end,  you can select an **LSVideoItem** item to be played with the 360° player component (**LSPlayerView**), or show the details and retrieve thumbnail images of multiple **LSVideoItem** items in a user interface where the *Logged-in User* can select a video to be played. The similar functionality is available for *Photo Item*.
 
-To request videos by category (i.e. sports, music, travel, design etc.), method **getVideosByCategory:** can be used. Note that gategory needs to be given as **LSCategory** object. Method **getCategories** can be used to get available categories.
+To request videos by category (i.e. sports, music, travel, design etc.), method **getVideosByCategory:** can be used. Note that gategory needs to be given as **LSCategory** object. Method **getCategories** can be used to get available categories. Similar functions can be found for *Photo Item*.
 
 ![Alt text](images/seq4.png "Sequence diagram: getVideosByCategory")
 
-It's also possible to give a star (**starLSVideoItem:lsVideoItem**) and a downvote (**downvoteLSVideoItem:lsVideoItem**) to a *Video Item*. Note that giving stars or downvoting videos requires that user must be logged in (*Logged-in User*). **LSContentManager** provides also methods to log in to an existing user account (**loginUser:password:**) as well as register a new user (**registerUser:email:password:confirmation:**).
+It's also possible to give a star (**starVideoItem:lsVideoItem**) and a downvote (**downvoteVideoItem:lsVideoItem**) to a *Video Item*.  Similar functions can be found for *Photo Item*. Note that giving stars or downvoting videos or photos requires that user must be logged in (*Logged-in User*). **LSContentManager** provides also methods to log in to an existing user account (**loginUser:password:**) as well as register a new user (**registerUser:email:password:confirmation:**).
 
 ###LSPlayerView
 

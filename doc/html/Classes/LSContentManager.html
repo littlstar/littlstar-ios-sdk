@@ -56,8 +56,6 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/delegate">delegate</option>
-		
 		<option value="//api/name/licenseFileURL">licenseFileURL</option>
 		
 		<option value="//api/name/loggedUser">loggedUser</option>
@@ -76,39 +74,91 @@
 		
 		<option value="//api/name/cancelVideoDownloadByVideoItem:">- cancelVideoDownloadByVideoItem:</option>
 		
+		<option value="//api/name/commentPhotoItem:comment:">- commentPhotoItem:comment:</option>
+		
+		<option value="//api/name/commentVideoItem:comment:">- commentVideoItem:comment:</option>
+		
 		<option value="//api/name/deleteDownloadedVideoByVideoItem:">- deleteDownloadedVideoByVideoItem:</option>
 		
 		<option value="//api/name/deleteDownloadedVideosByVideoItems:">- deleteDownloadedVideosByVideoItems:</option>
 		
 		<option value="//api/name/downloadVideoByVideoItem:">- downloadVideoByVideoItem:</option>
 		
+		<option value="//api/name/downvotePhotoItem:">- downvotePhotoItem:</option>
+		
 		<option value="//api/name/downvoteVideoItem:">- downvoteVideoItem:</option>
 		
 		<option value="//api/name/followUser:">- followUser:</option>
 		
-		<option value="//api/name/getCategories">- getCategories</option>
+		<option value="//api/name/getCategories:">- getCategories:</option>
 		
-		<option value="//api/name/getFollowersByUser:">- getFollowersByUser:</option>
+		<option value="//api/name/getCategoryById:">- getCategoryById:</option>
 		
-		<option value="//api/name/getFollowingByUser:">- getFollowingByUser:</option>
+		<option value="//api/name/getChannelById:">- getChannelById:</option>
+		
+		<option value="//api/name/getChannels:">- getChannels:</option>
+		
+		<option value="//api/name/getChannelsByUser:page:">- getChannelsByUser:page:</option>
+		
+		<option value="//api/name/getDiscovery">- getDiscovery</option>
+		
+		<option value="//api/name/getFeedByUser:page:">- getFeedByUser:page:</option>
+		
+		<option value="//api/name/getFollowersByUser:page:">- getFollowersByUser:page:</option>
+		
+		<option value="//api/name/getFollowingByUser:page:">- getFollowingByUser:page:</option>
+		
+		<option value="//api/name/getNotifications:">- getNotifications:</option>
+		
+		<option value="//api/name/getPhotoCommentsByPhotoId:page:">- getPhotoCommentsByPhotoId:page:</option>
+		
+		<option value="//api/name/getPhotoItemByPhotoId:">- getPhotoItemByPhotoId:</option>
+		
+		<option value="//api/name/getPhotoItems:">- getPhotoItems:</option>
+		
+		<option value="//api/name/getPhotoItemsByUser:page:">- getPhotoItemsByUser:page:</option>
+		
+		<option value="//api/name/getPhotosByCategory:page:">- getPhotosByCategory:page:</option>
+		
+		<option value="//api/name/getPhotosByChannel:page:">- getPhotosByChannel:page:</option>
 		
 		<option value="//api/name/getUser:">- getUser:</option>
 		
-		<option value="//api/name/getUserFeedByUser:">- getUserFeedByUser:</option>
-		
-		<option value="//api/name/getUserVideoItems:">- getUserVideoItems:</option>
+		<option value="//api/name/getVideoCommentsByVideoId:page:">- getVideoCommentsByVideoId:page:</option>
 		
 		<option value="//api/name/getVideoItemByVideoId:">- getVideoItemByVideoId:</option>
 		
-		<option value="//api/name/getVideosByCategory:">- getVideosByCategory:</option>
+		<option value="//api/name/getVideoItems:">- getVideoItems:</option>
+		
+		<option value="//api/name/getVideoItemsByUser:page:">- getVideoItemsByUser:page:</option>
+		
+		<option value="//api/name/getVideosByCategory:page:">- getVideosByCategory:page:</option>
+		
+		<option value="//api/name/getVideosByChannel:page:">- getVideosByChannel:page:</option>
+		
+		<option value="//api/name/loginFBUser:">- loginFBUser:</option>
 		
 		<option value="//api/name/loginUser:password:">- loginUser:password:</option>
 		
 		<option value="//api/name/logout">- logout</option>
 		
+		<option value="//api/name/refreshPhotoItem:">- refreshPhotoItem:</option>
+		
 		<option value="//api/name/refreshVideoItem:">- refreshVideoItem:</option>
 		
 		<option value="//api/name/registerUser:email:password:confirmation:">- registerUser:email:password:confirmation:</option>
+		
+		<option value="//api/name/searchAllByString:page:">- searchAllByString:page:</option>
+		
+		<option value="//api/name/searchChannelsByString:page:">- searchChannelsByString:page:</option>
+		
+		<option value="//api/name/searchPhotosByString:page:">- searchPhotosByString:page:</option>
+		
+		<option value="//api/name/searchUsersByString:page:">- searchUsersByString:page:</option>
+		
+		<option value="//api/name/searchVideosByString:page:">- searchVideosByString:page:</option>
+		
+		<option value="//api/name/starPhotoItem:">- starPhotoItem:</option>
 		
 		<option value="//api/name/starVideoItem:">- starVideoItem:</option>
 		
@@ -162,56 +212,6 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/delegate" title="delegate"></a>
-	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>LSContentManager Delegate</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;LSContentManagerDelegate&gt; delegate</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="../Protocols/LSContentManagerDelegate.html">LSContentManagerDelegate</a></p></code></li>
-					
-				</ul>
-			</div>
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">LSContentManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/licenseFileURL" title="licenseFileURL"></a>
 	<h3 class="method-title"><code><a href="#//api/name/licenseFileURL">&nbsp;&nbsp;licenseFileURL</a></code>
 </h3>
@@ -410,7 +410,7 @@ URL given in license file in enableSourceUrlExplicit field.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>NOTE: If returned <a href="../Classes/LSUser.html">LSUser</a> is nil, an error message in other parameter (NSString) of <a href="#//api/name/delegate">delegate</a> call shows the reason. Otherwise the error parameter is nil.</p>
+				<p>NOTE: If returned <a href="../Classes/LSUser.html">LSUser</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
 			</div>
 			
 
@@ -473,7 +473,65 @@ URL given in license file in enableSourceUrlExplicit field.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>NOTE: The Littlstar service user needs to be registered before logging! Also if returned <a href="../Classes/LSUser.html">LSUser</a> is nil, an error message in other parameter (NSString) of <a href="#//api/name/delegate">delegate</a> call shows the reason. Otherwise the error parameter is nil.</p>
+				<p>NOTE: The Littlstar service user needs to be registered before logging! Also if returned <a href="../Classes/LSUser.html">LSUser</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginFBUser:" title="loginFBUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginFBUser:">&ndash;&nbsp;loginFBUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to asynchronously log in to the Littlstar service with facebook profile token. As a result the -(void)lsContentManagerDidFinishLoginFBUser is called and the information of registered user wrapped in <a href="../Classes/LSUser.html">LSUser</a> object is passed as a parameter. Successfully logged user is stored in <a href="#//api/name/loggedUser">loggedUser</a> (<a href="../Classes/LSUser.html">LSUser</a> object) property (see above). In order to give stars or downvotes to a video the service user needs to be registered and logged in.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loginFBUser:(NSString *)<em>fbProfileToken</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fbProfileToken</code></th>
+						<td><p>Facebook profile token received from Facebook SDK</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: The Littlstar service user needs to be registered via Facebook SDK before logging! Also if returned <a href="../Classes/LSUser.html">LSUser</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
 			</div>
 			
 
@@ -532,6 +590,137 @@ URL given in license file in enableSourceUrlExplicit field.</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/getVideoItems:" title="getVideoItems:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getVideoItems:">&ndash;&nbsp;getVideoItems:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to fetch a list of available video items (LSVideoItems) available in Littlstar service.
+The result array of VideoItems is delivered through -(void)lsContentManagerDidGetVideoItems</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getVideoItems:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: The Littlstar API document ( <a href="http://developer.littlstar.com/docs/">http://developer.littlstar.com/docs/</a>#all-videos ) states that &ldquo;This endpoint currently returns a select subset of sponsored and featured videos.&rdquo; So the result array of video items is vastly smaller than the overall count of videos in service.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPhotoItems:" title="getPhotoItems:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPhotoItems:">&ndash;&nbsp;getPhotoItems:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to fetch a complete list of photo items (LSPhotoItems) available in Littlstar service.
+The result array of VideoItems is delivered through -(void)lsContentManagerDidGetPhotoItems</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPhotoItems:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/getUser:" title="getUser:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/getUser:">&ndash;&nbsp;getUser:</a></code>
 </h3>
@@ -544,7 +733,7 @@ URL given in license file in enableSourceUrlExplicit field.</p>
 			
 			<div class="method-subsection brief-description">
 				<p>Request asynchronously the Littlstar user (wrapped in <a href="../Classes/LSUser.html">LSUser</a> object defined in <a href="../Classes/LSUser.html">LSUser</a>.h) for the specific user ID (NSString).
-Result array in <a href="#//api/name/delegate">delegate</a> function -(void)lsContentManagerDidGetUser. Can be used for fetching information about the both video provider and the service user/consumer.</p>
+Result array in delegate function -(void)lsContentManagerDidGetUser. Can be used for fetching information about the both video provider and the service user/consumer.</p>
 			</div>
 			
 		    
@@ -573,7 +762,7 @@ Result array in <a href="#//api/name/delegate">delegate</a> function -(void)lsCo
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>NOTE: If returned <a href="../Classes/LSUser.html">LSUser</a> is nil, an error message in other parameter (NSString) of <a href="#//api/name/delegate">delegate</a> call shows the reason. Otherwise the error parameter is nil.</p>
+				<p>NOTE: If returned <a href="../Classes/LSUser.html">LSUser</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
 			</div>
 			
 
@@ -591,8 +780,8 @@ Result array in <a href="#//api/name/delegate">delegate</a> function -(void)lsCo
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getUserVideoItems:" title="getUserVideoItems:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getUserVideoItems:">&ndash;&nbsp;getUserVideoItems:</a></code>
+	<a name="//api/name/getVideoItemsByUser:page:" title="getVideoItemsByUser:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getVideoItemsByUser:page:">&ndash;&nbsp;getVideoItemsByUser:page:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -603,13 +792,13 @@ Result array in <a href="#//api/name/delegate">delegate</a> function -(void)lsCo
 			
 			<div class="method-subsection brief-description">
 				<p>Function to asynchronously load videos for a specified Littlstar user, request sent to service defined in <a href="#//api/name/serviceBaseURL">serviceBaseURL</a> property.
-The result videos are delivered in array in -(void)lsContentManagerDidGetUserVideoItems <a href="#//api/name/delegate">delegate</a> function.
+The result videos are delivered in array in -(void)lsContentManagerDidGetVideoItemsByUser delegate function.
 Video array then contains video items (1&hellip;n) (<a href="../Classes/LSVideoItem.html">LSVideoItem</a> objects) defined in <a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)getUserVideoItems:(LSUser *)<em>lsUser</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getVideoItemsByUser:(LSUser *)<em>lsUser</em> page:(NSUInteger)<em>page</em></code></div>
 
 		    
 			
@@ -620,6 +809,11 @@ Video array then contains video items (1&hellip;n) (<a href="../Classes/LSVideoI
 					<tr>
 						<th scope="row" class="argument-name"><code>lsUser</code></th>
 						<td><p><a href="../Classes/LSUser.html">LSUser</a> (defined in <a href="../Classes/LSUser.html">LSUser</a>.h) whose videos are going to be requested.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
 					</tr>
 				
 				</table>
@@ -633,7 +827,81 @@ Video array then contains video items (1&hellip;n) (<a href="../Classes/LSVideoI
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>NOTE: If returned array of LSVideoItems is nil or video count is 0, an error message in other parameter (NSString) of <a href="#//api/name/delegate">delegate</a> call shows the reason. Otherwise the error parameter is nil.</p>
+				<p>NOTE: If returned array of LSVideoItems is nil or video count is 0, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPhotoItemsByUser:page:" title="getPhotoItemsByUser:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPhotoItemsByUser:page:">&ndash;&nbsp;getPhotoItemsByUser:page:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to asynchronously load photos for a specified Littlstar user, request sent to service defined in <a href="#//api/name/serviceBaseURL">serviceBaseURL</a> property.
+The result videos are delivered in array in -(void)lsContentManagerDidGetPhotoItemsByUser delegate function.
+Video array then contains video items (1&hellip;n) (<a href="../Classes/LSPhotoItem.html">LSPhotoItem</a> objects) defined in <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPhotoItemsByUser:(LSUser *)<em>lsUser</em> page:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lsUser</code></th>
+						<td><p><a href="../Classes/LSUser.html">LSUser</a> (defined in <a href="../Classes/LSUser.html">LSUser</a>.h) whose videos are going to be requested.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned array of LSPhotoItems is nil or video count is 0, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
 			</div>
 			
 
@@ -672,7 +940,7 @@ Video array then contains video items (1&hellip;n) (<a href="../Classes/LSVideoI
 			
 			<div class="method-subsection brief-description">
 				<p>Function to asynchronously request a single video item (<a href="../Classes/LSVideoItem.html">LSVideoItem</a> object) for the specified unique video ID.
-The result video is delivered through -(void)lsContentManagerDidGetVideoById <a href="#//api/name/delegate">delegate</a> function.</p>
+The result video is delivered through -(void)lsContentManagerDidGetVideoById delegate function.</p>
 			</div>
 			
 		    
@@ -701,7 +969,660 @@ The result video is delivered through -(void)lsContentManagerDidGetVideoById <a 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>NOTE: If returned <a href="../Classes/LSVideoItem.html">LSVideoItem</a> is nil, an error message in other parameter (NSString) of <a href="#//api/name/delegate">delegate</a> call shows the reason. Otherwise the error parameter is nil.</p>
+				<p>NOTE: If returned <a href="../Classes/LSVideoItem.html">LSVideoItem</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPhotoItemByPhotoId:" title="getPhotoItemByPhotoId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPhotoItemByPhotoId:">&ndash;&nbsp;getPhotoItemByPhotoId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to asynchronously request a single photo item (<a href="../Classes/LSPhotoItem.html">LSPhotoItem</a> object) for the specified unique video ID.
+The result photo is delivered through -(void)lsContentManagerDidGetPhotoById delegate function.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPhotoItemByPhotoId:(NSUInteger)<em>photoId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>photoId</code></th>
+						<td><p>A unique video ID as NSUInteger</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getVideoCommentsByVideoId:page:" title="getVideoCommentsByVideoId:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getVideoCommentsByVideoId:page:">&ndash;&nbsp;getVideoCommentsByVideoId:page:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to asynchronously request comments of a single video by a specified unique video ID.
+The result comments are delivered through -(void)lsContentManagerDidGetVideoCommentsById delegate function.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getVideoCommentsByVideoId:(NSUInteger)<em>videoId</em> page:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoId</code></th>
+						<td><p>A unique video ID as NSUInteger</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the result page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned <a href="../Classes/LSResultPage.html">LSResultPage</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPhotoCommentsByPhotoId:page:" title="getPhotoCommentsByPhotoId:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPhotoCommentsByPhotoId:page:">&ndash;&nbsp;getPhotoCommentsByPhotoId:page:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to asynchronously request comments of a single photo by a specified unique photo ID.
+The result comments are delivered through -(void)lsContentManagerDidGetPhotoCommentsById delegate function.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPhotoCommentsByPhotoId:(NSUInteger)<em>photoId</em> page:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>photoId</code></th>
+						<td><p>A unique photo ID as NSUInteger</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the result page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned <a href="../Classes/LSResultPage.html">LSResultPage</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/commentVideoItem:comment:" title="commentVideoItem:comment:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/commentVideoItem:comment:">&ndash;&nbsp;commentVideoItem:comment:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to comment the specific video.
+Updated comments will be delivered through -(void)lsContentManagerDidGetVideoCommentsById delegate call.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)commentVideoItem:(LSVideoItem *)<em>videoItem</em> comment:(NSString *)<em>comment</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoItem</code></th>
+						<td><p>The video item of the selected video, defined in <a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>comment</code></th>
+						<td><p>The comment text.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned <a href="../Classes/LSVideoItem.html">LSVideoItem</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/commentPhotoItem:comment:" title="commentPhotoItem:comment:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/commentPhotoItem:comment:">&ndash;&nbsp;commentPhotoItem:comment:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to comment the specific video.
+Updated comments will be delivered through -(void)lsContentManagerDidGetPhotoCommentsById delegate call.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)commentPhotoItem:(LSPhotoItem *)<em>photoItem</em> comment:(NSString *)<em>comment</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>photoItem</code></th>
+						<td><p>The video item of the selected video, defined in <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>comment</code></th>
+						<td><p>The comment text.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/searchVideosByString:page:" title="searchVideosByString:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchVideosByString:page:">&ndash;&nbsp;searchVideosByString:page:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to asynchronously make a search query to video items (<a href="../Classes/LSVideoItem.html">LSVideoItem</a> objects) in Littlstar service. The search will go through all the fields in video items for finding a string match.
+The result array of videos is delivered through -(void)lsContentManagerDidSearchVideosByString delegate function.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)searchVideosByString:(NSString *)<em>string</em> page:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>A string to be used for searching videos.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned array is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/searchPhotosByString:page:" title="searchPhotosByString:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchPhotosByString:page:">&ndash;&nbsp;searchPhotosByString:page:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to asynchronously make a search query to photo items (<a href="../Classes/LSPhotoItem.html">LSPhotoItem</a> objects) in Littlstar service. The search will go through all the fields in photo items for finding a string match.
+The result array of photos is delivered through -(void)lsContentManagerDidSearchPhotosByString delegate function.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)searchPhotosByString:(NSString *)<em>string</em> page:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>A string to be used for searching photos.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned array is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/searchUsersByString:page:" title="searchUsersByString:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchUsersByString:page:">&ndash;&nbsp;searchUsersByString:page:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to asynchronously make a search query to user items (<a href="../Classes/LSUser.html">LSUser</a> objects) in Littlstar service. The search will go through all the fields in user items for finding a string match.
+The result array of users is delivered through -(void)lsContentManagerDidSearchUsersByString delegate function.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)searchUsersByString:(NSString *)<em>string</em> page:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>A string to be used for searching users.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned array is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/searchChannelsByString:page:" title="searchChannelsByString:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchChannelsByString:page:">&ndash;&nbsp;searchChannelsByString:page:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to asynchronously make a search query to channel items (<a href="../Classes/LSChannel.html">LSChannel</a> objects) in Littlstar service. The search will go through all the fields in channel items for finding a string match.
+The result array of users is delivered through -(void)lsContentManagerDidSearchChannelsByString delegate function.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)searchChannelsByString:(NSString *)<em>string</em> page:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>A string to be used for searching channels.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned array is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/searchAllByString:page:" title="searchAllByString:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchAllByString:page:">&ndash;&nbsp;searchAllByString:page:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to asynchronously make a search query to all items (videos, photos, users and channels) in Littlstar service. The search will go through all the fields in items for finding a string match.
+The result array of users is delivered through -(void)lsContentManagerDidSearchAllByString delegate function.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)searchAllByString:(NSString *)<em>string</em> page:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>A string to be used for searching all items.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned array is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
 			</div>
 			
 
@@ -732,7 +1653,7 @@ The result video is delivered through -(void)lsContentManagerDidGetVideoById <a 
 			<div class="method-subsection brief-description">
 				<p>Function to refresh the video properties of a single <a href="../Classes/LSVideoItem.html">LSVideoItem</a>. The data can be used for updating UI,
 e.g. with view, star and downvote counts, defined in <a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h.
-The result of the request, i.e. the updated <a href="../Classes/LSVideoItem.html">LSVideoItem</a> is returned through -(void)lsContentManagerDidRefreshVideoItem <a href="#//api/name/delegate">delegate</a> function.</p>
+The result of the request, i.e. the updated <a href="../Classes/LSVideoItem.html">LSVideoItem</a> is returned through -(void)lsContentManagerDidRefreshVideoItem delegate function.</p>
 			</div>
 			
 		    
@@ -761,7 +1682,7 @@ The result of the request, i.e. the updated <a href="../Classes/LSVideoItem.html
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>NOTE: If returned <a href="../Classes/LSVideoItem.html">LSVideoItem</a> is nil, an error message in other parameter (NSString) of <a href="#//api/name/delegate">delegate</a> call shows the reason. Otherwise the error parameter is nil.</p>
+				<p>NOTE: If returned <a href="../Classes/LSVideoItem.html">LSVideoItem</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
 			</div>
 			
 
@@ -773,6 +1694,75 @@ The result of the request, i.e. the updated <a href="../Classes/LSVideoItem.html
 				<ul>
 					
 					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refreshPhotoItem:" title="refreshPhotoItem:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refreshPhotoItem:">&ndash;&nbsp;refreshPhotoItem:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to refresh the photo properties of a single <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>. The data can be used for updating UI,
+e.g. with view, star and downvote counts, defined in <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h.
+The result of the request, i.e. the updated <a href="../Classes/LSVideoItem.html">LSVideoItem</a> is returned through -(void)lsContentManagerDidRefreshPhotoItem delegate function.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)refreshPhotoItem:(LSPhotoItem *)<em>photoItem</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>photoItem</code></th>
+						<td><p>of the photo to be updated.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h</p></code></li>
 					
 				</ul>
 			</div>
@@ -800,7 +1790,7 @@ The result of the request, i.e. the updated <a href="../Classes/LSVideoItem.html
 			
 			<div class="method-subsection brief-description">
 				<p>Function to <em>both</em> star or unstar the specific video, only inverts the current value.
-Updated <a href="../Classes/LSVideoItem.html">LSVideoItem</a> will be delivered through -(void)lsContentManagerDidRefreshVideoItem <a href="#//api/name/delegate">delegate</a> call.</p>
+Updated <a href="../Classes/LSVideoItem.html">LSVideoItem</a> will be delivered through -(void)lsContentManagerDidRefreshVideoItem delegate call.</p>
 			</div>
 			
 		    
@@ -829,7 +1819,7 @@ Updated <a href="../Classes/LSVideoItem.html">LSVideoItem</a> will be delivered 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>NOTE: If returned <a href="../Classes/LSVideoItem.html">LSVideoItem</a> is nil, an error message in other parameter (NSString) of <a href="#//api/name/delegate">delegate</a> call shows the reason. Otherwise the error parameter is nil.</p>
+				<p>NOTE: If returned <a href="../Classes/LSVideoItem.html">LSVideoItem</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
 			</div>
 			
 
@@ -868,7 +1858,7 @@ Updated <a href="../Classes/LSVideoItem.html">LSVideoItem</a> will be delivered 
 			
 			<div class="method-subsection brief-description">
 				<p>Function to <em>both</em> downvote or undownvote the specific video, only inverts the current value.
-Updated <a href="../Classes/LSVideoItem.html">LSVideoItem</a> will be delivered through -(void)lsContentManagerDidRefreshVideoItem <a href="#//api/name/delegate">delegate</a> call.</p>
+Updated <a href="../Classes/LSVideoItem.html">LSVideoItem</a> will be delivered through -(void)lsContentManagerDidRefreshVideoItem delegate call.</p>
 			</div>
 			
 		    
@@ -897,7 +1887,7 @@ Updated <a href="../Classes/LSVideoItem.html">LSVideoItem</a> will be delivered 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>NOTE: If returned <a href="../Classes/LSVideoItem.html">LSVideoItem</a> is nil, an error message in other parameter (NSString) of <a href="#//api/name/delegate">delegate</a> call shows the reason. Otherwise the error parameter is nil.</p>
+				<p>NOTE: If returned <a href="../Classes/LSVideoItem.html">LSVideoItem</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
 			</div>
 			
 
@@ -909,6 +1899,142 @@ Updated <a href="../Classes/LSVideoItem.html">LSVideoItem</a> will be delivered 
 				<ul>
 					
 					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/starPhotoItem:" title="starPhotoItem:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/starPhotoItem:">&ndash;&nbsp;starPhotoItem:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to <em>both</em> star or unstar the specific photo, only inverts the current value.
+Updated <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a> will be delivered through -(void)lsContentManagerDidRefreshPhotoItem delegate call.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)starPhotoItem:(LSPhotoItem *)<em>photoItem</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>photoItem</code></th>
+						<td><p>The photo item of the selected video, defined in <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downvotePhotoItem:" title="downvotePhotoItem:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downvotePhotoItem:">&ndash;&nbsp;downvotePhotoItem:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to <em>both</em> downvote or undownvote the specific photo, only inverts the current value.
+Updated <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a> will be delivered through -(void)lsContentManagerDidRefreshPhotoItem delegate call.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)downvotePhotoItem:(LSPhotoItem *)<em>photoItem</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>photoItem</code></th>
+						<td><p>The video item of the selected video, defined in <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NOTE: If returned <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a> is nil, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h</p></code></li>
 					
 				</ul>
 			</div>
@@ -937,7 +2063,7 @@ Updated <a href="../Classes/LSVideoItem.html">LSVideoItem</a> will be delivered 
 			<div class="method-subsection brief-description">
 				<p>Function to download the selected video to local disk <em>if</em> the video is downloadable.
 The video provider can disable the video downloading and has set a specific flag for it.
-In that case the function raises a <a href="#//api/name/delegate">delegate</a> error message in -(void)lsContentManagerDidFailDownloading call
+In that case the function raises a delegate error message in -(void)lsContentManagerDidFailDownloading call
 if not able to download (the state can be checked also from <a href="../Classes/LSVideoItem.html">LSVideoItem</a>.download property)
 Successfull downloading is notified by -(void)lsContentManagerDidFinishDownloading</p>
 			</div>
@@ -1182,6 +2308,18 @@ Cancelled LSVideoItems will be delivered through -(void)lsContentManagerDidCance
 
 		    
 			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoItems</code></th>
+						<td><p>Array of the video items to be deleted.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
 
 			
 
@@ -1212,8 +2350,8 @@ Cancelled LSVideoItems will be delivered through -(void)lsContentManagerDidCance
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getCategories" title="getCategories"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getCategories">&ndash;&nbsp;getCategories</a></code>
+	<a name="//api/name/getCategories:" title="getCategories:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCategories:">&ndash;&nbsp;getCategories:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1229,9 +2367,21 @@ Delegate call -(void)lsContentManagerDidGetCategories returns an array of video 
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)getCategories</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getCategories:(NSUInteger)<em>page</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
@@ -1263,8 +2413,71 @@ Delegate call -(void)lsContentManagerDidGetCategories returns an array of video 
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getVideosByCategory:" title="getVideosByCategory:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getVideosByCategory:">&ndash;&nbsp;getVideosByCategory:</a></code>
+	<a name="//api/name/getCategoryById:" title="getCategoryById:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCategoryById:">&ndash;&nbsp;getCategoryById:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to get channel by category ID. User needs to be logged in.
+Delegate call -(void)lsContentManagerDidGetGategories returns a channel in array (<a href="../Classes/LSCategory.html">LSCategory</a>).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getCategoryById:(NSUInteger)<em>categoryId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>categoryId</code></th>
+						<td><p>The ID of the category searched.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSCategory.html">LSCategory</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getVideosByCategory:page:" title="getVideosByCategory:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getVideosByCategory:page:">&ndash;&nbsp;getVideosByCategory:page:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1280,9 +2493,26 @@ Delegate call -(void)lsContentManagerDidGetVideosByCategory returns an array of 
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)getVideosByCategory:(LSCategory *)<em>category</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getVideosByCategory:(LSCategory *)<em>category</em> page:(NSUInteger)<em>page</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>category</code></th>
+						<td><p>The category of which videos are going to be requested.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
@@ -1297,6 +2527,8 @@ Delegate call -(void)lsContentManagerDidGetVideosByCategory returns an array of 
 			<div class="method-subsection see-also-section">
 				<h4 class="method-subtitle">See Also</h4>
 				<ul>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
 					
 					<li><code><p><a href="../Classes/LSCategory.html">LSCategory</a>.h</p></code></li>
 					
@@ -1314,8 +2546,78 @@ Delegate call -(void)lsContentManagerDidGetVideosByCategory returns an array of 
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getUserFeedByUser:" title="getUserFeedByUser:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getUserFeedByUser:">&ndash;&nbsp;getUserFeedByUser:</a></code>
+	<a name="//api/name/getPhotosByCategory:page:" title="getPhotosByCategory:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPhotosByCategory:page:">&ndash;&nbsp;getPhotosByCategory:page:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to fetch videos per category.
+Delegate call -(void)lsContentManagerDidGetPhotosByCategory returns an array of videos (wrapped in <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a> objects).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPhotosByCategory:(LSCategory *)<em>category</em> page:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>category</code></th>
+						<td><p>The category of which photos are going to be requested.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSCategory.html">LSCategory</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFeedByUser:page:" title="getFeedByUser:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFeedByUser:page:">&ndash;&nbsp;getFeedByUser:page:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1326,12 +2628,12 @@ Delegate call -(void)lsContentManagerDidGetVideosByCategory returns an array of 
 			
 			<div class="method-subsection brief-description">
 				<p>Function to fetch user feed videos per user.
-Delegate call -(void)lsContentManagerDidGetUserFeedVideoItems returns an array of videos (wrapped in <a href="../Classes/LSVideoItem.html">LSVideoItem</a> objects).</p>
+Delegate call -(void)lsContentManagerDidGetFeedByUser returns an array of videos (wrapped in <a href="../Classes/LSVideoItem.html">LSVideoItem</a> objects).</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)getUserFeedByUser:(LSUser *)<em>lsUser</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getFeedByUser:(LSUser *)<em>lsUser</em> page:(NSUInteger)<em>page</em></code></div>
 
 		    
 			
@@ -1342,6 +2644,11 @@ Delegate call -(void)lsContentManagerDidGetUserFeedVideoItems returns an array o
 					<tr>
 						<th scope="row" class="argument-name"><code>lsUser</code></th>
 						<td><p><a href="../Classes/LSUser.html">LSUser</a> (defined in <a href="../Classes/LSUser.html">LSUser</a>.h) whose videos are going to be requested.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
 					</tr>
 				
 				</table>
@@ -1379,8 +2686,78 @@ Delegate call -(void)lsContentManagerDidGetUserFeedVideoItems returns an array o
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getFollowersByUser:" title="getFollowersByUser:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getFollowersByUser:">&ndash;&nbsp;getFollowersByUser:</a></code>
+	<a name="//api/name/getChannelsByUser:page:" title="getChannelsByUser:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getChannelsByUser:page:">&ndash;&nbsp;getChannelsByUser:page:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to fetch channels per user.
+Delegate call -(void)lsContentManagerDidGetChannelsByUser returns an array of channels (wrapped in <a href="../Classes/LSChannel.html">LSChannel</a> objects).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getChannelsByUser:(LSUser *)<em>lsUser</em> page:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lsUser</code></th>
+						<td><p><a href="../Classes/LSUser.html">LSUser</a> (defined in <a href="../Classes/LSUser.html">LSUser</a>.h) whose videos are going to be requested.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSUser.html">LSUser</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSChannel.html">LSChannel</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFollowersByUser:page:" title="getFollowersByUser:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFollowersByUser:page:">&ndash;&nbsp;getFollowersByUser:page:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1391,12 +2768,12 @@ Delegate call -(void)lsContentManagerDidGetUserFeedVideoItems returns an array o
 			
 			<div class="method-subsection brief-description">
 				<p>Function to fetch followers (LSUsers) for the lsUser.
-Delegate call -(void)lsContentManagerDidGetUserFollowers returns an array of followers (wrapped in <a href="../Classes/LSUser.html">LSUser</a> objects).</p>
+Delegate call -(void)lsContentManagerDidGetFollowersByUser returns an array of followers (wrapped in <a href="../Classes/LSUser.html">LSUser</a> objects).</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)getFollowersByUser:(LSUser *)<em>lsUser</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getFollowersByUser:(LSUser *)<em>lsUser</em> page:(NSUInteger)<em>page</em></code></div>
 
 		    
 			
@@ -1407,6 +2784,11 @@ Delegate call -(void)lsContentManagerDidGetUserFollowers returns an array of fol
 					<tr>
 						<th scope="row" class="argument-name"><code>lsUser</code></th>
 						<td><p><a href="../Classes/LSUser.html">LSUser</a> (defined in <a href="../Classes/LSUser.html">LSUser</a>.h) whose followers are about to be requested.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
 					</tr>
 				
 				</table>
@@ -1442,8 +2824,8 @@ Delegate call -(void)lsContentManagerDidGetUserFollowers returns an array of fol
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getFollowingByUser:" title="getFollowingByUser:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getFollowingByUser:">&ndash;&nbsp;getFollowingByUser:</a></code>
+	<a name="//api/name/getFollowingByUser:page:" title="getFollowingByUser:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFollowingByUser:page:">&ndash;&nbsp;getFollowingByUser:page:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1454,12 +2836,12 @@ Delegate call -(void)lsContentManagerDidGetUserFollowers returns an array of fol
 			
 			<div class="method-subsection brief-description">
 				<p>Function to fetch the users (LSUsers) that the lsUser is following.
-Delegate call -(void)lsContentManagerDidGetUserFollowings returns an array of users (wrapped in <a href="../Classes/LSUser.html">LSUser</a> objects).</p>
+Delegate call -(void)lsContentManagerDidGetFollowingsByUser returns an array of users (wrapped in <a href="../Classes/LSUser.html">LSUser</a> objects).</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)getFollowingByUser:(LSUser *)<em>lsUser</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getFollowingByUser:(LSUser *)<em>lsUser</em> page:(NSUInteger)<em>page</em></code></div>
 
 		    
 			
@@ -1470,6 +2852,11 @@ Delegate call -(void)lsContentManagerDidGetUserFollowings returns an array of us
 					<tr>
 						<th scope="row" class="argument-name"><code>lsUser</code></th>
 						<td><p><a href="../Classes/LSUser.html">LSUser</a> (defined in <a href="../Classes/LSUser.html">LSUser</a>.h) whose list of interested users is about to be requested.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
 					</tr>
 				
 				</table>
@@ -1567,6 +2954,388 @@ Delegate call -(void)lsContentManagerDidFollowUser returns an updated user (wrap
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNotifications:" title="getNotifications:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNotifications:">&ndash;&nbsp;getNotifications:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to get user notifications. User needs to be logged in.
+Delegate call -(void)lsContentManagerDidGetNotifications returns an array of notifications (<a href="../Classes/LSNotification.html">LSNotification</a>).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getNotifications:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSNotification.html">LSNotification</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getChannels:" title="getChannels:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getChannels:">&ndash;&nbsp;getChannels:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to get channels. User needs to be logged in.
+Delegate call -(void)lsContentManagerDidGetChannels returns an array of channels (<a href="../Classes/LSChannel.html">LSChannel</a>).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getChannels:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSChannel.html">LSChannel</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getChannelById:" title="getChannelById:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getChannelById:">&ndash;&nbsp;getChannelById:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to get channel by channel ID. User needs to be logged in.
+Delegate call -(void)lsContentManagerDidGetChannels returns a channel in array (<a href="../Classes/LSChannel.html">LSChannel</a>).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getChannelById:(NSUInteger)<em>channelId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>channelId</code></th>
+						<td><p>The ID of the channel searched.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSChannel.html">LSChannel</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getVideosByChannel:page:" title="getVideosByChannel:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getVideosByChannel:page:">&ndash;&nbsp;getVideosByChannel:page:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to get videos by channel ID. User needs to be logged in.
+Delegate call -(void)lsContentManagerDidGetVideosByChannel returns an array of videos (LSVideo).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getVideosByChannel:(LSChannel *)<em>channel</em> page:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>channel</code></th>
+						<td><p>The channel of the videos.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSChannel.html">LSChannel</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPhotosByChannel:page:" title="getPhotosByChannel:page:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPhotosByChannel:page:">&ndash;&nbsp;getPhotosByChannel:page:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to get videos by channel ID. User needs to be logged in.
+Delegate call -(void)lsContentManagerDidGetPhotosByChannel returns an array of photos (LSPhoto).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPhotosByChannel:(LSChannel *)<em>channel</em> page:(NSUInteger)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>channel</code></th>
+						<td><p>The channel of the photos.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The page index to the item page to be loaded from service.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSChannel.html">LSChannel</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDiscovery" title="getDiscovery"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDiscovery">&ndash;&nbsp;getDiscovery</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Function to get discovery content.
+Delegate call -(void)lsContentManagerDidGetDiscovery returns an dictionary of discovery content, i.e. popular, featured, sponsored videos and available cateogries, the names are the keys in dictionary.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDiscovery</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSCategory.html">LSCategory</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSContentManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -1575,12 +3344,14 @@ Delegate call -(void)lsContentManagerDidFollowUser returns an updated user (wrap
 					
 
                     
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Little Star Media, Inc. (Littlstar). All rights reserved. Updated: 2015-05-11</p>
+						<p class="copyright">Copyright &copy; 2015 Little Star Media, Inc. (Littlstar). All rights reserved. Updated: 2015-06-12</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

@@ -66,6 +66,8 @@
 		
 		<option value="//api/name/touchGesturesDisabled">touchGesturesDisabled</option>
 		
+		<option value="//api/name/uiInterfaceOrientationPortrait">uiInterfaceOrientationPortrait</option>
+		
 		<option value="//api/name/vrModeEnabled">vrModeEnabled</option>
 		
 	</optgroup>
@@ -75,6 +77,8 @@
 
 	
 	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initPhotoWithPhotoItem:contentManager:licenseFileUrl:">- initPhotoWithPhotoItem:contentManager:licenseFileUrl:</option>
 		
 		<option value="//api/name/initVideoWithVideoItem:contentManager:licenseFileUrl:">- initVideoWithVideoItem:contentManager:licenseFileUrl:</option>
 		
@@ -303,6 +307,48 @@ control content internally. Default NO.</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/uiInterfaceOrientationPortrait" title="uiInterfaceOrientationPortrait"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uiInterfaceOrientationPortrait">&nbsp;&nbsp;uiInterfaceOrientationPortrait</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Device orientation portrait. Affects screen dividing in VR mode.
+If YES -> screen is divided to top and botton halves, else (NO, default) -> to left and right halves.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL uiInterfaceOrientationPortrait</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/previewImageMode" title="previewImageMode"></a>
 	<h3 class="method-title"><code><a href="#//api/name/previewImageMode">&nbsp;&nbsp;previewImageMode</a></code>
 </h3>
@@ -450,6 +496,80 @@ in 360 video view. Default NO.</p>
 					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
 					
 					<li><code><p><a href="../Classes/LSVideoItem.html">LSVideoItem</a>.h</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSPlayerView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initPhotoWithPhotoItem:contentManager:licenseFileUrl:" title="initPhotoWithPhotoItem:contentManager:licenseFileUrl:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initPhotoWithPhotoItem:contentManager:licenseFileUrl:">&ndash;&nbsp;initPhotoWithPhotoItem:contentManager:licenseFileUrl:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes orion 360 image with given video item, license file url.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)initPhotoWithPhotoItem:(LSPhotoItem *)<em>photoItem</em> contentManager:(LSContentManager *)<em>contentManager</em> licenseFileUrl:(NSURL *)<em>licenseFileUrl</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>photoItem</code></th>
+						<td><p>The photo item of the selected photo, defined in <a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentManager</code></th>
+						<td><p>Reference to <a href="../Classes/LSContentManager.html">LSContentManager</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>licenseFileUrl</code></th>
+						<td><p>Url to license file</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/LSContentManager.html">LSContentManager</a>.h</p></code></li>
+					
+					<li><code><p><a href="../Classes/LSPhotoItem.html">LSPhotoItem</a>.h</p></code></li>
 					
 				</ul>
 			</div>
@@ -706,12 +826,14 @@ in 360 video view. Default NO.</p>
 					
 
                     
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Little Star Media, Inc. (Littlstar). All rights reserved. Updated: 2015-05-11</p>
+						<p class="copyright">Copyright &copy; 2015 Little Star Media, Inc. (Littlstar). All rights reserved. Updated: 2015-06-12</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

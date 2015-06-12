@@ -58,6 +58,8 @@
 		
 		<option value="//api/name/bannerURL">bannerURL</option>
 		
+		<option value="//api/name/creationDate">creationDate</option>
+		
 		<option value="//api/name/desc">desc</option>
 		
 		<option value="//api/name/downVotes">downVotes</option>
@@ -67,6 +69,8 @@
 		<option value="//api/name/downloadState">downloadState</option>
 		
 		<option value="//api/name/downvoted">downvoted</option>
+		
+		<option value="//api/name/slug">slug</option>
 		
 		<option value="//api/name/smallThumbURL">smallThumbURL</option>
 		
@@ -81,6 +85,8 @@
 		<option value="//api/name/user">user</option>
 		
 		<option value="//api/name/videoId">videoId</option>
+		
+		<option value="//api/name/videoURL">videoURL</option>
 		
 		<option value="//api/name/views">views</option>
 		
@@ -149,12 +155,53 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Unique video ID.</p>
+				<p>Unique item ID within videos.</p>
 			</div>
 			
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger videoId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSVideoItem.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/slug" title="slug"></a>
+	<h3 class="method-title"><code><a href="#//api/name/slug">&nbsp;&nbsp;slug</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unique item ID in LS service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *slug</code></div>
 
 		    
 			
@@ -237,170 +284,6 @@
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *desc</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">LSVideoItem.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/bannerURL" title="bannerURL"></a>
-	<h3 class="method-title"><code><a href="#//api/name/bannerURL">&nbsp;&nbsp;bannerURL</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>URL for 2D image, can be used as a background image in UI etc. May be nil value.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *bannerURL</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">LSVideoItem.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/thumbURL" title="thumbURL"></a>
-	<h3 class="method-title"><code><a href="#//api/name/thumbURL">&nbsp;&nbsp;thumbURL</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>URL to a small image, can be used as a thumbnail image for video.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *thumbURL</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">LSVideoItem.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/smallThumbURL" title="smallThumbURL"></a>
-	<h3 class="method-title"><code><a href="#//api/name/smallThumbURL">&nbsp;&nbsp;smallThumbURL</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>URL to another small image, can be used as a thumbnail image for video.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *smallThumbURL</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">LSVideoItem.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/download" title="download"></a>
-	<h3 class="method-title"><code><a href="#//api/name/download">&nbsp;&nbsp;download</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Property that tells whether the video is downloadable.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL download</code></div>
 
 		    
 			
@@ -630,6 +513,252 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/creationDate" title="creationDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/creationDate">&nbsp;&nbsp;creationDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creation date of item</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *creationDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSVideoItem.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/videoURL" title="videoURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/videoURL">&nbsp;&nbsp;videoURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Video URL for the video in LS service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *videoURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSVideoItem.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bannerURL" title="bannerURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bannerURL">&nbsp;&nbsp;bannerURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>URL for 2D image, can be used as a background image in UI etc. May be nil value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *bannerURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSVideoItem.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/thumbURL" title="thumbURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/thumbURL">&nbsp;&nbsp;thumbURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>URL to a small image, can be used as a thumbnail image for video.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *thumbURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSVideoItem.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/smallThumbURL" title="smallThumbURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/smallThumbURL">&nbsp;&nbsp;smallThumbURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>URL to another small image, can be used as a thumbnail image for video.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *smallThumbURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSVideoItem.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/download" title="download"></a>
+	<h3 class="method-title"><code><a href="#//api/name/download">&nbsp;&nbsp;download</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Property that tells whether the video is downloadable.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL download</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSVideoItem.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/user" title="user"></a>
 	<h3 class="method-title"><code><a href="#//api/name/user">&nbsp;&nbsp;user</a></code>
 </h3>
@@ -719,12 +848,14 @@
 					
 
                     
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Little Star Media, Inc. (Littlstar). All rights reserved. Updated: 2015-05-11</p>
+						<p class="copyright">Copyright &copy; 2015 Little Star Media, Inc. (Littlstar). All rights reserved. Updated: 2015-06-12</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

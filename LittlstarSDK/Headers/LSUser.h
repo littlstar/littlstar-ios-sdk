@@ -14,9 +14,9 @@
 @interface LSUser : NSObject
 
 /**
- * User ID which is used for fetching the video listing for the specific purpose.
+ * Unique item ID in LS service.
  */
-@property (nonatomic, readonly) NSString *lsUserName;
+@property (nonatomic, readonly) NSString *slug;
 
 /**
  * Title for showing the full video owner name on UI.
@@ -34,8 +34,44 @@
 @property (nonatomic, readonly) NSString *lsUserIconURL;
 
 /**
+ * User first name, may be nil.
+ */
+@property (nonatomic, readonly) NSString *firstName;
+
+/**
+ * User last name, may be nil.
+ */
+@property (nonatomic, readonly) NSString *lastName;
+
+/**
+ *  Number of videos uploaded by the user.
+ */
+@property (nonatomic, readonly) NSUInteger videosCount;
+
+/**
+ *  Number of photos uploaded by the user.
+ */
+@property (nonatomic, readonly) NSUInteger photosCount;
+
+/**
  * Property indicating if the user is being followed, valid only when logged in.
  */
 @property (nonatomic, readonly) BOOL following;
+
+/**
+ * Creation, i.e. registration date of the user.
+ */
+@property (nonatomic, readonly) NSString *creationDate;
+
+/**
+ *  Number of other users following the user.
+ */
+@property (nonatomic, readonly) NSUInteger followersCount;
+
+/**
+ *  Number of other users that the user is following.
+ */
+@property (nonatomic, readonly) NSUInteger followingCount;
+
 
 @end

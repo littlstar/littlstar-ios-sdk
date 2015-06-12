@@ -56,7 +56,17 @@
 	
 	<optgroup label="Properties">
 		
+		<option value="//api/name/creationDate">creationDate</option>
+		
+		<option value="//api/name/firstName">firstName</option>
+		
+		<option value="//api/name/followersCount">followersCount</option>
+		
 		<option value="//api/name/following">following</option>
+		
+		<option value="//api/name/followingCount">followingCount</option>
+		
+		<option value="//api/name/lastName">lastName</option>
 		
 		<option value="//api/name/lsUserBio">lsUserBio</option>
 		
@@ -64,7 +74,11 @@
 		
 		<option value="//api/name/lsUserIconURL">lsUserIconURL</option>
 		
-		<option value="//api/name/lsUserName">lsUserName</option>
+		<option value="//api/name/photosCount">photosCount</option>
+		
+		<option value="//api/name/slug">slug</option>
+		
+		<option value="//api/name/videosCount">videosCount</option>
 		
 	</optgroup>
 	
@@ -120,8 +134,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/lsUserName" title="lsUserName"></a>
-	<h3 class="method-title"><code><a href="#//api/name/lsUserName">&nbsp;&nbsp;lsUserName</a></code>
+	<a name="//api/name/slug" title="slug"></a>
+	<h3 class="method-title"><code><a href="#//api/name/slug">&nbsp;&nbsp;slug</a></code>
 </h3>
 
 	<div class="method-info">
@@ -131,12 +145,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>User ID which is used for fetching the video listing for the specific purpose.</p>
+				<p>Unique item ID in LS service.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *lsUserName</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *slug</code></div>
 
 		    
 			
@@ -284,6 +298,170 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/firstName" title="firstName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/firstName">&nbsp;&nbsp;firstName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>User first name, may be nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *firstName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lastName" title="lastName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lastName">&nbsp;&nbsp;lastName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>User last name, may be nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *lastName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/videosCount" title="videosCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/videosCount">&nbsp;&nbsp;videosCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Number of videos uploaded by the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger videosCount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/photosCount" title="photosCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/photosCount">&nbsp;&nbsp;photosCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Number of photos uploaded by the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger photosCount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/following" title="following"></a>
 	<h3 class="method-title"><code><a href="#//api/name/following">&nbsp;&nbsp;following</a></code>
 </h3>
@@ -324,6 +502,129 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/creationDate" title="creationDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/creationDate">&nbsp;&nbsp;creationDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creation, i.e. registration date of the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *creationDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/followersCount" title="followersCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/followersCount">&nbsp;&nbsp;followersCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Number of other users <a href="#//api/name/following">following</a> the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger followersCount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/followingCount" title="followingCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/followingCount">&nbsp;&nbsp;followingCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Number of other users that the user is <a href="#//api/name/following">following</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger followingCount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LSUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -332,12 +633,14 @@
 					
 
                     
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Little Star Media, Inc. (Littlstar). All rights reserved. Updated: 2015-05-11</p>
+						<p class="copyright">Copyright &copy; 2015 Little Star Media, Inc. (Littlstar). All rights reserved. Updated: 2015-06-12</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

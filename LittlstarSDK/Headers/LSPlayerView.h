@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <LittlstarSDK/LSContentManager.h>
 #import <LittlstarSDK/LSVideoItem.h>
+#import <LittlstarSDK/LSPhotoItem.h>
 
 @protocol LSPlayerViewDelegate;
 
@@ -39,6 +40,12 @@
 @property (nonatomic) BOOL vrModeEnabled;
 
 /**
+ *  Device orientation portrait. Affects screen dividing in VR mode. 
+ *  If YES -> screen is divided to top and botton halves, else (NO, default) -> to left and right halves.
+ */
+@property (nonatomic) BOOL uiInterfaceOrientationPortrait;
+
+/**
  *  Preview image mode. When set YES, preloaded UIImage or new texture generated from given video URL is shown
  *  in 360 video view. Default NO.
  */
@@ -62,6 +69,18 @@
  *  @see LSVideoItem.h
  */
 -(void)initVideoWithVideoItem:(LSVideoItem*)videoItem contentManager:(LSContentManager*)contentManager licenseFileUrl:(NSURL *)licenseFileUrl;
+
+/**
+ *  Initializes orion 360 image with given video item, license file url.
+ *
+ *  @param photoItem       The photo item of the selected photo, defined in LSPhotoItem.h.
+ *  @param contentManager  Reference to LSContentManager
+ *  @param licenseFileUrl  Url to license file
+ *
+ *  @see LSContentManager.h
+ *  @see LSPhotoItem.h
+ */
+-(void)initPhotoWithPhotoItem:(LSPhotoItem*)photoItem contentManager:(LSContentManager*)contentManager licenseFileUrl:(NSURL *)licenseFileUrl;
 
 /**
  *  Plays 360 video starting from given location.
