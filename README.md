@@ -17,7 +17,7 @@ The Littlstar SDK is a developer library to easily build and implement mobile ap
 What's new
 -------
 
-Build 2.0.0, Jun 12, 2015:
+Build 2.0.3, Jun 16, 2015:
 * Updated API with several functions
 
 Overview
