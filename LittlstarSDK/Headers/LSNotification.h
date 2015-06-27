@@ -2,7 +2,7 @@
 //  LSNotification.h
 //  FinweComponents
 //
-//  Created by Finwe Ltd on 29/05/15.
+//  Created by Littlstar on 29/05/15.
 //  Copyright (c) 2015 Finwe Ltd. All rights reserved.
 //
 
