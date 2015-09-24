@@ -14,6 +14,11 @@
 @interface LSUser : NSObject
 
 /**
+ *  User ID
+ */
+@property (nonatomic, readonly) NSUInteger userId;
+
+/**
  * Unique item ID in LS service.
  */
 @property (nonatomic, readonly) NSString *slug;
