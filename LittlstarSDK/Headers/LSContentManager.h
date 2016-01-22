@@ -27,7 +27,7 @@
  *
  *  @see LSContentManagerDelegate
  */
-//@property (nonatomic, weak) id <LSContentManagerDelegate> delegate;
+@property (nonatomic, weak) id <LSContentManagerDelegate> delegate;
 
 /**
  * Mandatory, url to license file, the name of the file needs to match the application bundle name in order to enable the SDK 360 video features, e.g. com.littlstar.example-app.key.lic

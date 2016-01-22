@@ -31,87 +31,87 @@ typedef NSUInteger LSVideoDownloadState;
 /**
  * Unique item ID within videos.
  */
-@property (nonatomic, readonly) NSUInteger videoId;
+@property (nonatomic, readwrite) NSUInteger videoId;
 
 /**
  * Unique item ID in LS service.
  */
-@property (nonatomic, readonly) NSString *slug;
+@property (nonatomic, readwrite) NSString *slug;
 
 /**
  * Video title.
  */
-@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readwrite) NSString *title;
 
 /**
  * Short video description.
  */
-@property (nonatomic, readonly) NSString *desc;
+@property (nonatomic, readwrite) NSString *desc;
 
 /**
  * View count for a specific video.
  */
-@property (nonatomic, readonly) NSUInteger views;
+@property (nonatomic, readwrite) NSUInteger views;
 
 /**
  * Star count given for a specific video.
  */
-@property (nonatomic, readonly) NSUInteger stars;
+@property (nonatomic, readwrite) NSUInteger stars;
 
 /**
  * Downvote count for a specific video.
  */
-@property (nonatomic, readonly) NSUInteger downVotes;
+@property (nonatomic, readwrite) NSUInteger downVotes;
 
 /**
  * User star value, valid only when logged in.
  */
-@property (nonatomic, readonly) BOOL stared;
+@property (nonatomic, readwrite) BOOL stared;
 
 /**
  * User downvote value, valid only when logged in.
  */
-@property (nonatomic, readonly) BOOL downvoted;
+@property (nonatomic, readwrite) BOOL downvoted;
 
 /**
  * Creation date of item
  */
-@property (nonatomic, readonly) NSString *creationDate;
+@property (nonatomic, readwrite) NSString *creationDate;
 
 /**
  * Video URL for the video in LS service.
  */
-@property (nonatomic, readonly) NSString *videoURL;
+@property (nonatomic, readwrite) NSString *videoURL;
 
 /**
  * URL for 2D image, can be used as a background image in UI etc. May be nil value.
  */
-@property (nonatomic, readonly) NSString *bannerURL;
+@property (nonatomic, readwrite) NSString *bannerURL;
 
 /**
  * URL to a small image, can be used as a thumbnail image for video.
  */
-@property (nonatomic, readonly) NSString *thumbURL;
+@property (nonatomic, readwrite) NSString *thumbURL;
 
 /**
  * URL to another small image, can be used as a thumbnail image for video.
  */
-@property (nonatomic, readonly) NSString *smallThumbURL;
+@property (nonatomic, readwrite) NSString *smallThumbURL;
 
 /**
  * Property that tells whether the video is downloadable.
  */
-@property (nonatomic, readonly) BOOL download;
+@property (nonatomic, readwrite) BOOL download;
 
 /**
  * Video owner user info.
  */
-@property (nonatomic, readonly) LSUser *user;
+@property (nonatomic, readwrite) LSUser *user;
 
 /**
  * Download state of a video defined in VideoItem.
  */
-@property (nonatomic, readonly) LSVideoDownloadState downloadState;
+@property (nonatomic, readwrite) LSVideoDownloadState downloadState;
 
 
 @end
