@@ -84,6 +84,12 @@ typedef NSUInteger LSVideoDownloadState;
 @property (nonatomic, readwrite) NSString *videoURL;
 
 /**
+ * Live video HLS URL for the video in LS service.
+ */
+@property (nonatomic, readwrite) NSString *hlsURL;
+
+
+/**
  * URL for 2D image, can be used as a background image in UI etc. May be nil value.
  */
 @property (nonatomic, readwrite) NSString *bannerURL;
@@ -112,6 +118,11 @@ typedef NSUInteger LSVideoDownloadState;
  * Download state of a video defined in VideoItem.
  */
 @property (nonatomic, readwrite) LSVideoDownloadState downloadState;
+
+/**
+ * Property that tells whether the video is live stream.
+ */
+@property (nonatomic, readwrite) BOOL live;
 
 
 @end

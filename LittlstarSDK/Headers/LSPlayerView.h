@@ -57,6 +57,11 @@
 @property (nonatomic, readonly) CGFloat totalDuration;
 
 /**
+ * Scrolling speed factor, 0.0f - 1.0f, default: 1.0f
+ */
+@property (nonatomic) CGFloat scrollSpeed;
+
+/**
  *  Initializes Littlstar 360 video with given video item, license file url.
  *
  *  NOTE: If the selected video is stored locally LSPlayerView automatically selects it instead of remote video.
@@ -145,6 +150,16 @@
  *  @param totalDuration Total video duration
  */
 - (void)lsPlayerViewDidUpdateProgress:(LSPlayerView*)lsPlayerView currentTime:(CGFloat)currentTime availableTime:(CGFloat)availableTime totalDuration:(CGFloat)totalDuration;
+
+/**
+ *  Tells the delegate that video progress values were updated.
+ *
+ *  @param lsPlayerView    LSPlayerView
+ *  @param currentTime   Current progress time
+ *  @param totalDuration Total video duration
+ *  @param loadedTimeRanges  This property provides a collection of time ranges for which the player has the media data readily available. The ranges provided might be discontinuous.
+ */
+- (void)lsPlayerViewDidUpdateProgress:(LSPlayerView*)lsPlayerView currentTime:(CGFloat)currentTime totalDuration:(CGFloat)totalDuration loadedTimeRanges:(NSArray*)loadedTimeRanges;
 
 /**
  *  Tells the delegate that 360 video buffering status changed, e.g. in initialization phase or due to a slow network connection.
