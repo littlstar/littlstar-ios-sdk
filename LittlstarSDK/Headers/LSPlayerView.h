@@ -6,10 +6,33 @@
 //  Copyright (c) 2015 Little Star Media, Inc. (Littlstar). All rights reserved.
 //
 
+#import <GLKit/GLKit.h>
 #import <UIKit/UIKit.h>
 #import <LittlstarSDK/LSContentManager.h>
 #import <LittlstarSDK/LSVideoItem.h>
 #import <LittlstarSDK/LSPhotoItem.h>
+
+/**
+ * Euler anglers interface
+ */
+ 
+@interface LSPlayerViewOrientation : NSObject
+
+/**
+ *  Rotation around y-axis in degrees (0 - 360).
+ */
+@property (nonatomic) CGFloat beta;
+
+/**
+ *  Rotation around x-axis in degrees (0 - 360).
+ */
+@property (nonatomic) CGFloat gamma;
+
+/**
+ *  Rotation around z-axis in degrees (0 - 360).
+ */
+@property (nonatomic) CGFloat alpha;
+@end
 
 @protocol LSPlayerViewDelegate;
 
@@ -21,7 +44,7 @@
 /**
  *  LSPlayerView delegate, callback interface for the caller object.
  */
-@property (nonatomic, weak) id <LSPlayerViewDelegate> delegate;
+@property (readonly) id <LSPlayerViewDelegate> delegate;
 
 /**
  *  Gesture mode disabled. When set YES, no gestures (panning etc.) can be used to
@@ -55,6 +78,11 @@
  *  Current video total duration in seconds.
  */
 @property (nonatomic, readonly) CGFloat totalDuration;
+
+/**
+ * Scrolling speed factor, 0.0f - 1.0f, default: 1.0f
+ */
+@property (nonatomic) CGFloat scrollSpeed;
 
 /**
  *  Initializes Littlstar 360 video with given video item, license file url.
@@ -113,6 +141,13 @@
  */
 -(void)seekTo:(CGFloat)seekTo;
 
+/**
+ * Gets current orientation for lsplayer
+ */
+-(LSPlayerViewOrientation *)orientation;
+
+-(void)setDelegate:(id<LSPlayerViewDelegate>)delegate;
+
 @end
 
 /**
@@ -147,11 +182,34 @@
 - (void)lsPlayerViewDidUpdateProgress:(LSPlayerView*)lsPlayerView currentTime:(CGFloat)currentTime availableTime:(CGFloat)availableTime totalDuration:(CGFloat)totalDuration;
 
 /**
+ *  Tells the delegate that video progress values were updated.
+ *
+ *  @param lsPlayerView    LSPlayerView
+ *  @param currentTime   Current progress time
+ *  @param totalDuration Total video duration
+ *  @param loadedTimeRanges  This property provides a collection of time ranges for which the player has the media data readily available. The ranges provided might be discontinuous.
+ */
+- (void)lsPlayerViewDidUpdateProgress:(LSPlayerView*)lsPlayerView currentTime:(CGFloat)currentTime totalDuration:(CGFloat)totalDuration loadedTimeRanges:(NSArray*)loadedTimeRanges;
+
+/**
  *  Tells the delegate that 360 video buffering status changed, e.g. in initialization phase or due to a slow network connection.
  *
  *  @param lsPlayerView LSPlayerView
  *  @param buffering  New buffering status
  */
 - (void)lsPlayerViewDidChangeBufferingStatus:(LSPlayerView*)lsPlayerView buffering:(BOOL)buffering;
+
+/**
+ * Notifies the delegate that the player did receive a single tap
+ */
+- (void)lsPlayerViewDidReceiveSingleTap:(LSPlayerView*)lsPlayerView;
+
+/**
+ * Notifies the delegate that the player did receive a double tap
+ */
+- (void)lsPlayerViewDidReceiveDoubleTap:(LSPlayerView*)lsPlayerView;
+
+
+
 
 @end
