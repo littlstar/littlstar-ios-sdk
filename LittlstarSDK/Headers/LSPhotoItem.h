@@ -82,4 +82,42 @@
  */
 @property (nonatomic, readonly) LSUser *user;
 
+/**
+ * Property that tells whether the photo is 3d and mode side by side.
+ */
+@property (nonatomic, readwrite) BOOL sbs3d;
+
+/**
+ * Property that tells whether the photo is 3d and mode over and under.
+ */
+@property (nonatomic, readwrite) BOOL ou3d;
+
+/**
+ *  Initial diagonal fov (field of view) in degrees (fovMin -> fovMax).
+ *
+ *  Default value 90.
+ */
+@property (nonatomic) CGFloat fovDefault;
+
+/**
+ *  Maximum diagonal fov (field of view) in degrees (fovMin -> 180).
+ *
+ *  Default value 120.
+ */
+@property (nonatomic) CGFloat fovMax;
+
+/**
+ *  Minimum diagonal fov (field of view) in degrees (0 -> fovMax).
+ *
+ *  Default value 60.
+ */
+@property (nonatomic) CGFloat fovMin;
+
+/**
+ *  Initial yaw angle(rotation around y-axis) in degrees.
+ *
+ *  Default value 180(centered).
+ */
+@property (nonatomic) CGFloat yawAngle;
+
 @end
