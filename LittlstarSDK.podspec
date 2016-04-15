@@ -1,17 +1,17 @@
 Pod::Spec.new do |s|
   s.name = 'LittlstarSDK'
-  s.version = '2.0.3'
+  s.version = '2.0.10'
   s.license      = {
     :type => 'Copyright',
     :text => <<-LICENSE
-      Copyright 2015 Littlstar. All rights reserved.
+      Copyright 2016 Littlstar. All rights reserved.
       LICENSE
   }
   s.summary = 'LittlstarSDK_iOS containing components for panorama video'
-  s.homepage = 'https://github.com/littlstar/LittlstarSDK_iOS'
+  s.homepage = 'https://github.com/littlstar/littlstar-ios-sdk'
   s.author = { 'Littlstar dev. team' => 'dev@littlstar.com' }
   s.platform = :ios
-  s.source = { :git => 'git@github.com:littlstar/LittlstarSDK_iOS.git', :tag => "#{s.version}" }
+  s.source = { :git => 'git@github.com:littlstar/littlstar-ios-sdk.git', :tag => "#{s.version}" }
   s.source_files = 'LittlstarSDK/Headers/*.h'
   s.preserve_paths = 'LittlstarSDK/libLittlstarSDK.a'
   s.vendored_libraries = 'LittlstarSDK/libLittlstarSDK.a'
