@@ -142,6 +142,16 @@
 -(void)seekTo:(CGFloat)seekTo;
 
 /**
+ *  Zooms in
+ */
+-(void)zoomIn;
+
+/**
+ *  Zooms out
+ */
+-(void)zoomOut;
+
+/**
  * Gets current orientation for lsplayer
  */
 -(LSPlayerViewOrientation *)orientation;

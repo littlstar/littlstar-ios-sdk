@@ -116,7 +116,7 @@
 /**
  *  Initial yaw angle(rotation around y-axis) in degrees.
  *
- *  Default value 180(centered).
+ *  Default value 0(centered).
  */
 @property (nonatomic) CGFloat yawAngle;
 

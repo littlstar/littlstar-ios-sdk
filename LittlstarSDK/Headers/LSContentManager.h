@@ -103,6 +103,54 @@
 -(void)getVideoItems:(NSUInteger)page;
 
 /**
+ * Function to fetch a list of sponsored video items (LSVideoItems) available in Littlstar service.
+ * The result array of VideoItems is delivered through -(void)lsContentManagerDidGetSponsoredVideoItems
+ *
+ * NOTE: If returned array of LSVideoItems is nil or video count is 0, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.
+ *
+ * @param page The page index to the item page to be loaded from service.
+ *
+ * @see LSVideoItem.h
+ */
+-(void)getSponsoredVideoItems:(NSUInteger)page;
+
+/**
+ * Function to fetch a list of featured video items (LSVideoItems) available in Littlstar service.
+ * The result array of VideoItems is delivered through -(void)lsContentManagerDidGetFeaturedVideoItems
+ *
+ * NOTE: If returned array of LSVideoItems is nil or video count is 0, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.
+ *
+ * @param page The page index to the item page to be loaded from service.
+ *
+ * @see LSVideoItem.h
+ */
+-(void)getFeaturedVideoItems:(NSUInteger)page;
+
+/**
+ * Function to fetch a list of popular video items (LSVideoItems) available in Littlstar service.
+ * The result array of VideoItems is delivered through -(void)lsContentManagerDidGetPopularVideoItems
+ *
+ * NOTE: If returned array of LSVideoItems is nil or video count is 0, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.
+ *
+ * @param page The page index to the item page to be loaded from service.
+ *
+ * @see LSVideoItem.h
+ */
+-(void)getPopularVideoItems:(NSUInteger)page;
+
+/**
+ * Function to fetch a list of latest video items (LSVideoItems) available in Littlstar service.
+ * The result array of VideoItems is delivered through -(void)lsContentManagerDidGetLatestVideoItems
+ *
+ * NOTE: If returned array of LSVideoItems is nil or video count is 0, an error message in other parameter (NSString) of delegate call shows the reason. Otherwise the error parameter is nil.
+ *
+ * @param page The page index to the item page to be loaded from service.
+ *
+ * @see LSVideoItem.h
+ */
+-(void)getLatestVideoItems:(NSUInteger)page;
+
+/**
  * Function to fetch a complete list of photo items (LSPhotoItems) available in Littlstar service.
  * The result array of VideoItems is delivered through -(void)lsContentManagerDidGetPhotoItems
  *
@@ -715,6 +763,58 @@
  *  @see LSVideoItem.h
  */
 -(void)lsContentManagerDidGetVideoItems:(LSContentManager*)manager resultPage:(LSResultPage*)resultPage error:(NSString*)error;
+
+/**
+ *  Delegate function called when the requested sponsored video items are collected. If there is an error, the resultPage parameter is nil and error message shows the reason.
+ *
+ *  @param manager      Content manager used to request video items
+ *  @param resultPage   Results of a request, items stored in array
+ *  @param error        Error message as string.
+ *
+ *  @see LSContentManager.h
+ *  @see LSResultPage.h
+ *  @see LSVideoItem.h
+ */
+-(void)lsContentManagerDidGetSponsoredVideoItems:(LSContentManager*)manager resultPage:(LSResultPage*)resultPage error:(NSString*)error;
+
+/**
+ *  Delegate function called when the requested featured video items are collected. If there is an error, the resultPage parameter is nil and error message shows the reason.
+ *
+ *  @param manager      Content manager used to request video items
+ *  @param resultPage   Results of a request, items stored in array
+ *  @param error        Error message as string.
+ *
+ *  @see LSContentManager.h
+ *  @see LSResultPage.h
+ *  @see LSVideoItem.h
+ */
+-(void)lsContentManagerDidGetFeaturedVideoItems:(LSContentManager*)manager resultPage:(LSResultPage*)resultPage error:(NSString*)error;
+
+/**
+ *  Delegate function called when the requested popular video items are collected. If there is an error, the resultPage parameter is nil and error message shows the reason.
+ *
+ *  @param manager      Content manager used to request video items
+ *  @param resultPage   Results of a request, items stored in array
+ *  @param error        Error message as string.
+ *
+ *  @see LSContentManager.h
+ *  @see LSResultPage.h
+ *  @see LSVideoItem.h
+ */
+-(void)lsContentManagerDidGetPopularVideoItems:(LSContentManager*)manager resultPage:(LSResultPage*)resultPage error:(NSString*)error;
+
+/**
+ *  Delegate function called when the requested latest video items are collected. If there is an error, the resultPage parameter is nil and error message shows the reason.
+ *
+ *  @param manager      Content manager used to request video items
+ *  @param resultPage   Results of a request, items stored in array
+ *  @param error        Error message as string.
+ *
+ *  @see LSContentManager.h
+ *  @see LSResultPage.h
+ *  @see LSVideoItem.h
+ */
+-(void)lsContentManagerDidGetLatestVideoItems:(LSContentManager*)manager resultPage:(LSResultPage*)resultPage error:(NSString*)error;
 
 /**
  *  Delegate function called when the requested all available photo items are collected. If there is an error, the resultPage parameter is nil and error message shows the reason.

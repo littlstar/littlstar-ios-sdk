@@ -95,6 +95,11 @@ typedef NSUInteger LSVideoDownloadState;
 @property (nonatomic, readwrite) NSString *bannerURL;
 
 /**
+ * URL for larger 2D image, can be used as a background image in UI etc. May be nil value.
+ */
+@property (nonatomic, readwrite) NSString *largeBannerURL;
+
+/**
  * URL to a small image, can be used as a thumbnail image for video.
  */
 @property (nonatomic, readwrite) NSString *thumbURL;
@@ -163,7 +168,7 @@ typedef NSUInteger LSVideoDownloadState;
 /**
  *  Initial yaw angle(rotation around y-axis) in degrees.
  *
- *  Default value 180(centered).
+ *  Default value 0(centered).
  */
 @property (nonatomic) CGFloat yawAngle;
 
