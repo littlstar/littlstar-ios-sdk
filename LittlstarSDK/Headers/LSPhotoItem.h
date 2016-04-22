@@ -78,6 +78,11 @@
 @property (nonatomic, readonly) NSString *smallThumbURL;
 
 /**
+ * Local file URL. LSPlayer uses this if not null and local file exists.
+ */
+@property (nonatomic, readwrite) NSURL *localURL;
+
+/**
  * Photo owner user info.
  */
 @property (nonatomic, readonly) LSUser *user;

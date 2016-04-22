@@ -88,6 +88,10 @@ typedef NSUInteger LSVideoDownloadState;
  */
 @property (nonatomic, readwrite) NSString *hlsURL;
 
+/**
+ * Local file URL. LSPlayer uses this instead of videoURL and hlsURL if not null and local file exists.
+ */
+@property (nonatomic, readwrite) NSURL *localURL;
 
 /**
  * URL for 2D image, can be used as a background image in UI etc. May be nil value.
