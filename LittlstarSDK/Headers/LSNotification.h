@@ -17,32 +17,32 @@
 /**
  * Unique item ID.
  */
-@property (nonatomic, readonly) NSUInteger notificationId;
+@property (nonatomic, assign) NSUInteger notificationId;
 
 /**
  * Notification action.
  */
-@property (nonatomic, readonly) NSString *action;
+@property (nonatomic, strong) NSString *action;
 
 /**
  * Creation date of item
  */
-@property (nonatomic, readonly) NSString *creationDate;
+@property (nonatomic, strong) NSString *creationDate;
 
 /**
  * Update date of item
  */
-@property (nonatomic, readonly) NSString *updateDate;
+@property (nonatomic, strong) NSString *updateDate;
 
 /**
  * User that trigged the action.
  */
-@property (nonatomic, readonly) LSUser *user;
+@property (nonatomic, strong) LSUser *user;
 
 /**
  * Notification string.
  */
-@property (nonatomic, readonly) NSString *notification;
+@property (nonatomic, strong) NSString *notification;
 
-@property (nonatomic, readonly) id recipient;
+@property (nonatomic, assign) id recipient;
 @end

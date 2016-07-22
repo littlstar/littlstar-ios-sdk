@@ -16,31 +16,31 @@
 /**
  * Unique category ID within categories.
  */
-@property (nonatomic, readonly) NSUInteger categoryId;
+@property (nonatomic, assign) NSUInteger categoryId;
 
 /**
  * Unique item ID in LS service.
  */
-@property (nonatomic, readonly) NSString *slug;
+@property (nonatomic, strong) NSString *slug;
 
 /**
  * Category display name.
  */
-@property (nonatomic, readonly) NSString *categoryDisplayName;
+@property (nonatomic, strong) NSString *categoryDisplayName;
 
 /**
  * Video count per category.
  */
-@property (nonatomic, readonly) NSUInteger categoryVideoCount;
+@property (nonatomic, assign) NSUInteger categoryVideoCount;
 
 /**
  * Photo count per category.
  */
-@property (nonatomic, readonly) NSUInteger categoryPhotoCount;
+@property (nonatomic, assign) NSUInteger categoryPhotoCount;
 
 /**
  * Thumb image per category.
  */
-@property (nonatomic, readonly) NSString *thumbURL;
+@property (nonatomic, strong) NSString *thumbURL;
 
 @end

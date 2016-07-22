@@ -17,16 +17,16 @@
 /**
  * Comment text.
  */
-@property (nonatomic, readonly) NSString *text;
+@property (nonatomic, strong) NSString *text;
 
 /**
  * Creation date of comment.
  */
-@property (nonatomic, readonly) NSString *creationDate;
+@property (nonatomic, strong) NSString *creationDate;
 
 /**
  * Comment owner user info.
  */
-@property (nonatomic, readonly) LSUser *user;
+@property (nonatomic, strong) LSUser *user;
 
 @end

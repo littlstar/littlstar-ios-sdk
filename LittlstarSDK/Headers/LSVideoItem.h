@@ -84,6 +84,11 @@ typedef NSUInteger LSVideoDownloadState;
 @property (nonatomic, readwrite) NSString *videoURL;
 
 /**
+ * HD Video URL for the video in LS service.
+ */
+@property (nonatomic, readwrite) NSString *videoHDURL;
+
+/**
  * Live video HLS URL for the video in LS service.
  */
 @property (nonatomic, readwrite) NSString *hlsURL;
@@ -175,5 +180,15 @@ typedef NSUInteger LSVideoDownloadState;
  *  Default value 0(centered).
  */
 @property (nonatomic) CGFloat yawAngle;
+
+/**
+ * Sponsored video.
+ */
+@property (nonatomic, assign) BOOL sponsored;
+
+/**
+ * Featured video.
+ */
+@property (nonatomic, assign) BOOL featured;
 
 @end

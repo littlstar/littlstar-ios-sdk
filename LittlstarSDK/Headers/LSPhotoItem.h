@@ -20,62 +20,62 @@
 /**
  * Unique item ID within photos.
  */
-@property (nonatomic, readonly) NSUInteger photoId;
+@property (nonatomic, readwrite, assign) NSUInteger photoId;
 
 /**
  * Unique item ID in LS service.
  */
-@property (nonatomic, readonly) NSString *slug;
+@property (nonatomic, readwrite, strong) NSString *slug;
 
 /**
  * Video title.
  */
-@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readwrite, strong) NSString *title;
 
 /**
  * Short video description.
  */
-@property (nonatomic, readonly) NSString *desc;
+@property (nonatomic, readwrite, strong) NSString *desc;
 
 /**
  * View count for a specific video.
  */
-@property (nonatomic, readonly) NSUInteger views;
+@property (nonatomic, readwrite, assign) NSUInteger views;
 
 /**
  * Star count given for a specific video.
  */
-@property (nonatomic, readonly) NSUInteger stars;
+@property (nonatomic, readwrite, assign) NSUInteger stars;
 
 /**
  * Downvote count for a specific video.
  */
-@property (nonatomic, readonly) NSUInteger downVotes;
+@property (nonatomic, readwrite, assign) NSUInteger downVotes;
 
 /**
  * User star value, valid only when logged in.
  */
-@property (nonatomic, readonly) BOOL stared;
+@property (nonatomic, readwrite, assign) BOOL stared;
 
 /**
  * User downvote value, valid only when logged in.
  */
-@property (nonatomic, readonly) BOOL downvoted;
+@property (nonatomic, readwrite) BOOL downvoted;
 
 /**
  * Creation date of item
  */
-@property (nonatomic, readonly) NSString *creationDate;
+@property (nonatomic, readwrite, strong) NSString *creationDate;
 
 /**
  * URL for 360 photo, can be used as a background image in UI etc.
  */
-@property (nonatomic, readonly) NSString *thumbURL;
+@property (nonatomic, readwrite, strong) NSString *thumbURL;
 
 /**
  * URL to another small image, can be used as a thumbnail image for 360 photo.
  */
-@property (nonatomic, readonly) NSString *smallThumbURL;
+@property (nonatomic, readwrite, strong) NSString *smallThumbURL;
 
 /**
  * Local file URL. LSPlayer uses this if not null and local file exists.
@@ -85,7 +85,7 @@
 /**
  * Photo owner user info.
  */
-@property (nonatomic, readonly) LSUser *user;
+@property (nonatomic, readwrite, strong) LSUser *user;
 
 /**
  * Property that tells whether the photo is 3d and mode side by side.
@@ -124,5 +124,18 @@
  *  Default value 0(centered).
  */
 @property (nonatomic) CGFloat yawAngle;
+
+/**
+ * Sponsored photo.
+ */
+@property (nonatomic, assign) BOOL sponsored;
+
+/**
+ * Featured photo.
+ */
+@property (nonatomic, assign) BOOL featured;
+
+@property (nonatomic, strong) NSString *largeURL;
+@property (nonatomic, strong) NSString *originalURL;
 
 @end

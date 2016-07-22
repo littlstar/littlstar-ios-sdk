@@ -17,56 +17,56 @@
 /**
  * Unique item ID.
  */
-@property (nonatomic, readonly) NSUInteger channelId;
+@property (nonatomic, assign) NSUInteger channelId;
 
 /**
  * Unique item ID.
  */
-@property (nonatomic, readonly) NSString *slug;
+@property (nonatomic, strong) NSString *slug;
 
 /**
  * Video title.
  */
-@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, strong) NSString *title;
 
 /**
  * Video count for a specific channel.
  */
-@property (nonatomic, readonly) NSUInteger videosCount;
+@property (nonatomic, assign) NSUInteger videosCount;
 
 /**
  * Photo count given for a specific channel.
  */
-@property (nonatomic, readonly) NSUInteger photosCount;
+@property (nonatomic, assign) NSUInteger photosCount;
 
 /**
  * Sponsored channel.
  */
-@property (nonatomic, readonly) BOOL sponsored;
+@property (nonatomic, assign) BOOL sponsored;
 
 /**
  * Featured channel.
  */
-@property (nonatomic, readonly) BOOL featured;
+@property (nonatomic, assign) BOOL featured;
 
 /**
  * Creation date of item
  */
-@property (nonatomic, readonly) NSString *creationDate;
+@property (nonatomic, strong) NSString *creationDate;
 
 /**
  * URL for 360 photo, can be used as a background image in UI etc.
  */
-@property (nonatomic, readonly) NSString *thumbURL;
+@property (nonatomic, strong) NSString *thumbURL;
 
 /**
  * URL to another small image, can be used as a thumbnail image for 360 photo.
  */
-@property (nonatomic, readonly) NSString *bannerURL;
+@property (nonatomic, strong) NSString *bannerURL;
 
 /**
  * Channel owner user info.
  */
-@property (nonatomic, readonly) LSUser *user;
+@property (nonatomic, strong) LSUser *user;
 
 @end

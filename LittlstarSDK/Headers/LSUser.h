@@ -16,67 +16,76 @@
 /**
  *  User ID
  */
-@property (nonatomic, readonly) NSUInteger userId;
+@property (nonatomic, readwrite, assign) NSUInteger userId;
 
 /**
  * Unique item ID in LS service.
  */
-@property (nonatomic, readonly) NSString *slug;
+@property (nonatomic, readwrite, strong) NSString *slug;
 
 /**
  * Title for showing the full video owner name on UI.
  */
-@property (nonatomic, readonly) NSString *lsUserDisplayName;
+@property (nonatomic, readwrite, strong) NSString *lsUserDisplayName;
 
 /**
  * Littlstar user biography if added to service, may be nil if not defined to service, can be nil.
  */
-@property (nonatomic, readonly) NSString *lsUserBio;
+@property (nonatomic, strong) NSString *lsUserBio;
 
 /**
  * Littlstar user avatar icon URL, default icon is Littlstar specified if not user set.
  */
-@property (nonatomic, readonly) NSString *lsUserIconURL;
+@property (nonatomic, readwrite, strong) NSString *lsUserIconURL;
 
 /**
  * User first name, may be nil.
  */
-@property (nonatomic, readonly) NSString *firstName;
+@property (nonatomic, strong) NSString *firstName;
 
 /**
  * User last name, may be nil.
  */
-@property (nonatomic, readonly) NSString *lastName;
+@property (nonatomic, strong) NSString *lastName;
 
 /**
  *  Number of videos uploaded by the user.
  */
-@property (nonatomic, readonly) NSUInteger videosCount;
+@property (nonatomic, readonly, assign) NSUInteger videosCount;
 
 /**
  *  Number of photos uploaded by the user.
  */
-@property (nonatomic, readonly) NSUInteger photosCount;
+@property (nonatomic, readonly, assign) NSUInteger photosCount;
 
 /**
  * Property indicating if the user is being followed, valid only when logged in.
  */
-@property (nonatomic, readonly) BOOL following;
+@property (nonatomic, readonly, assign) BOOL following;
 
 /**
  * Creation, i.e. registration date of the user.
  */
-@property (nonatomic, readonly) NSString *creationDate;
+@property (nonatomic, readonly, strong) NSString *creationDate;
 
 /**
  *  Number of other users following the user.
  */
-@property (nonatomic, readonly) NSUInteger followersCount;
+@property (nonatomic, readonly, assign) NSUInteger followersCount;
 
 /**
  *  Number of other users that the user is following.
  */
-@property (nonatomic, readonly) NSUInteger followingCount;
+@property (nonatomic, readonly, assign) NSUInteger followingCount;
 
+@property (nonatomic, strong) NSString *cred;
+
+@property (nonatomic, strong) NSString *updated;
+
+@property (nonatomic, strong) NSString *apiKey;
+
+@property (nonatomic, strong) NSString *data;
+
+@property (nonatomic, strong) NSString *eMail;
 
 @end
