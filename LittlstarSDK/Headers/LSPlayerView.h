@@ -158,6 +158,9 @@
 
 -(void)setDelegate:(id<LSPlayerViewDelegate>)delegate;
 
+-(void)setVolume:(CGFloat)volume;
+-(CGFloat)volume;
+
 @end
 
 /**
@@ -218,8 +221,4 @@
  * Notifies the delegate that the player did receive a double tap
  */
 - (void)lsPlayerViewDidReceiveDoubleTap:(LSPlayerView*)lsPlayerView;
-
-
-
-
 @end
