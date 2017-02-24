@@ -32,6 +32,11 @@
  *  Rotation around z-axis in degrees (0 - 360).
  */
 @property (nonatomic) CGFloat alpha;
+
+
+
+
+
 @end
 
 @protocol LSPlayerViewDelegate;
@@ -40,6 +45,11 @@
  *  Class LSPlayerView, provides simple LSPlayerView for viewing 360 image or video.
  */
 @interface LSPlayerView : UIView
+
+/**
+ *  Data generated from LSPlayer
+ */
+@property (nonatomic) NSMutableDictionary* playerData;
 
 /**
  *  LSPlayerView delegate, callback interface for the caller object.
@@ -192,7 +202,7 @@
  *  @param availableTime Available time
  *  @param totalDuration Total video duration
  */
-- (void)lsPlayerViewDidUpdateProgress:(LSPlayerView*)lsPlayerView currentTime:(CGFloat)currentTime availableTime:(CGFloat)availableTime totalDuration:(CGFloat)totalDuration;
+- (void)lsPlayerViewDidUpdateProgress:(LSPlayerView*)lsPlayerView currentTime:(CGFloat)currentTime availableTime:(CGFloat)availableTime totalDuration:(CGFloat)totalDuration playedPercentage:(int)playedPercentage;
 
 /**
  *  Tells the delegate that video progress values were updated.
