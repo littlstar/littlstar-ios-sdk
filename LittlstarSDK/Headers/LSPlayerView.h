@@ -49,7 +49,7 @@
 /**
  *  Data generated from LSPlayer
  */
-@property (nonatomic) NSMutableDictionary* playerData;
+@property (nonatomic) NSMutableDictionary* videoData;
 
 /**
  *  LSPlayerView delegate, callback interface for the caller object.
@@ -201,18 +201,9 @@
  *  @param currentTime   Current progress time
  *  @param availableTime Available time
  *  @param totalDuration Total video duration
+ *  @param videoData includes [percentage] and, if video reaches the end, [data]
  */
-- (void)lsPlayerViewDidUpdateProgress:(LSPlayerView*)lsPlayerView currentTime:(CGFloat)currentTime availableTime:(CGFloat)availableTime totalDuration:(CGFloat)totalDuration playedPercentage:(int)playedPercentage;
-
-/**
- *  Tells the delegate that video progress values were updated.
- *
- *  @param lsPlayerView    LSPlayerView
- *  @param currentTime   Current progress time
- *  @param totalDuration Total video duration
- *  @param loadedTimeRanges  This property provides a collection of time ranges for which the player has the media data readily available. The ranges provided might be discontinuous.
- */
-- (void)lsPlayerViewDidUpdateProgress:(LSPlayerView*)lsPlayerView currentTime:(CGFloat)currentTime totalDuration:(CGFloat)totalDuration loadedTimeRanges:(NSArray*)loadedTimeRanges;
+- (void)lsPlayerViewDidUpdateProgress:(LSPlayerView*)lsPlayerView currentTime:(CGFloat)currentTime availableTime:(CGFloat)availableTime totalDuration:(CGFloat)totalDuration videoData:(NSMutableDictionary*)videoData;
 
 /**
  *  Tells the delegate that 360 video buffering status changed, e.g. in initialization phase or due to a slow network connection.
