@@ -34,9 +34,6 @@
 @property (nonatomic) CGFloat alpha;
 
 
-
-
-
 @end
 
 @protocol LSPlayerViewDelegate;
@@ -50,6 +47,7 @@
  *  Data generated from LSPlayer
  */
 @property (nonatomic) NSMutableDictionary* videoData;
+
 
 /**
  *  LSPlayerView delegate, callback interface for the caller object.
@@ -108,6 +106,8 @@
  */
 -(void)initVideoWithVideoItem:(LSVideoItem*)videoItem contentManager:(LSContentManager*)contentManager licenseFileUrl:(NSURL *)licenseFileUrl;
 
+-(void)initPhotowithPhotoItem:(UIImage*)image licenseFileUrl:(NSURL *)licenseFileUrl token:(NSString *)token;
+  
 /**
  *  Initializes orion 360 image with given video item, license file url.
  *
