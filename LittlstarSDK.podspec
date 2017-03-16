@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name = 'LittlstarSDK'
-  s.version = '2.3.4'
+  s.version = '2.3.5'
   s.license      = {
     :type => 'Copyright',
     :text => <<-LICENSE
-      Copyright 2016 Littlstar. All rights reserved.
+      Copyright 2017 Littlstar. All rights reserved.
       LICENSE
   }
   s.summary = 'LittlstarSDK_iOS containing components for panorama video'
