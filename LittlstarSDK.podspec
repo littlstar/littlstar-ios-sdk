@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.ios.preserve_paths = 'LittlstarSDK/libLittlstarSDK.a'
   s.ios.vendored_libraries = 'LittlstarSDK/libLittlstarSDK.a'
   s.ios.frameworks = 'UIKit', 'Foundation', 'CoreMotion', 'OpenAL', 'AudioToolbox'
+
   s.tvos.preserve_paths = 'LittlstarSDK/libLittlstarSDK_tvOS.a'
   s.tvos.vendored_libraries = 'LittlstarSDK/libLittlstarSDK_tvOS.a'
   s.tvos.frameworks = 'UIKit', 'Foundation'
