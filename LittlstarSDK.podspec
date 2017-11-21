@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'LittlstarSDK'
-  s.version = '2.3.6-beta'
+  s.version = '2.3.8'
   s.license      = {
     :type => 'Copyright',
     :text => <<-LICENSE
